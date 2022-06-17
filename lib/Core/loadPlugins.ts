@@ -2,8 +2,8 @@ import {
   createPluginContext,
   TerriaPluginModule,
   ViewState
-} from "terriajs-plugin-api";
-import TerriaError from "terriajs/lib/Core/TerriaError";
+} from "leylinesjs-plugin-api";
+import TerriaError from "leylinesjs/lib/Core/TerriaError";
 
 /**
  * Load plugin modules.
