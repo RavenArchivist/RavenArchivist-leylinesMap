@@ -1,13 +1,13 @@
 const globeGif = require('./lib/Styles/globe.gif');
-const polyfill = require("terriajs/lib/Core/polyfill");
+const polyfill = require("leylinesjs/lib/Core/polyfill");
 
 require('./lib/Styles/loader.css');
 
 function loadMainScript() {
     // load the main chunk
     return new Promise((resolve, reject) => {
-      require.ensure(['terriajs/lib/Core/prerequisites'], function(require) {
-        require('terriajs/lib/Core/prerequisites');
+      require.ensure(['leylinesjs/lib/Core/prerequisites'], function(require) {
+        require('leylinesjs/lib/Core/prerequisites');
         require.ensure(['./index'], function(require) {
           resolve(require('./index'));
         }, reject, 'index');

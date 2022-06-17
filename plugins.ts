@@ -1,4 +1,4 @@
-import { TerriaPluginModule } from "terriajs-plugin-api";
+import { TerriaPluginModule } from "leylines-plugin-api";
 
 /**
 * A function that when called imports all plugins.

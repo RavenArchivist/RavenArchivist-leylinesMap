@@ -6,7 +6,7 @@
       "packages/cesium",
       "packages/leylinesjs-server",
       "packages/leylinesjs-plugin-api",
-      "packages/plugin-sample"
+      "packages/leylinesjs-plugin-sample"
     ],
     "nohoist": [
       "**/husky"
@@ -27,7 +27,7 @@
     "pm2": "^3.2.2",
     "leylinesjs-server": "https://github.com/leylines/leylinesjs-server",
     "leylinesjs-plugin-api": "https://github.com/leylines/leylinesjs-plugin-api",
-    "terriajs-plugin-sample": "0.0.1-alpha.5"
+    "leylinesjs-plugin-sample": "https://github.com/leylines/leylinesjs-plugin-sample"
   },
   "config": {
     "awsProfile": "terria",
