@@ -26,7 +26,7 @@ var watchOptions = {
 
 gulp.task('check-terriajs-dependencies', function(done) {
     var appPackageJson = require('./package.json');
-    var terriaPackageJson = require('terriajs/package.json');
+    var terriaPackageJson = require('leylinesjs/package.json');
 
     syncDependencies(appPackageJson.dependencies, terriaPackageJson, true);
     syncDependencies(appPackageJson.devDependencies, terriaPackageJson, true);
@@ -60,7 +60,7 @@ gulp.task('render-index', function renderIndex(done) {
 });
 
 gulp.task('build-app', gulp.parallel('render-index', gulp.series('check-terriajs-dependencies', 'write-version', function buildApp(done) {
-    var runWebpack = require('terriajs/buildprocess/runWebpack.js');
+    var runWebpack = require('leylinesjs/buildprocess/runWebpack.js');
     var webpack = require('webpack');
     var webpackConfig = require('./buildprocess/webpack.config.js')(true);
 
@@ -70,7 +70,7 @@ gulp.task('build-app', gulp.parallel('render-index', gulp.series('check-terriajs
 })));
 
 gulp.task('release-app', gulp.parallel('render-index', gulp.series('check-terriajs-dependencies', 'write-version', function releaseApp(done) {
-    var runWebpack = require('terriajs/buildprocess/runWebpack.js');
+    var runWebpack = require('leylinesjs/buildprocess/runWebpack.js');
     var webpack = require('webpack');
     var webpackConfig = require('./buildprocess/webpack.config.js')(false);
 
@@ -86,7 +86,7 @@ gulp.task('watch-render-index', gulp.series('render-index', function watchRender
 }));
 
 gulp.task('watch-app', gulp.parallel('watch-render-index', gulp.series('check-terriajs-dependencies', function watchApp(done) {    var fs = require('fs');
-    var watchWebpack = require('terriajs/buildprocess/watchWebpack');
+    var watchWebpack = require('leylinesjs/buildprocess/watchWebpack');
     var webpack = require('webpack');
     var webpackConfig = require('./buildprocess/webpack.config.js')(true, false);
 
@@ -97,7 +97,7 @@ gulp.task('watch-app', gulp.parallel('watch-render-index', gulp.series('check-te
 })));
 
 gulp.task('copy-terriajs-assets', function() {
-    var terriaWebRoot = path.join(getPackageRoot('terriajs'), 'wwwroot');
+    var terriaWebRoot = path.join(getPackageRoot('leylinesjs'), 'wwwroot');
     var sourceGlob = path.join(terriaWebRoot, '**');
     var destPath = path.resolve(__dirname, 'wwwroot', 'build', 'TerriaJS');
 
@@ -107,7 +107,7 @@ gulp.task('copy-terriajs-assets', function() {
 });
 
 gulp.task('watch-terriajs-assets', gulp.series('copy-terriajs-assets', function waitForTerriaJsAssetChanges() {
-    var terriaWebRoot = path.join(getPackageRoot('terriajs'), 'wwwroot');
+    var terriaWebRoot = path.join(getPackageRoot('leylinesjs'), 'wwwroot');
     var sourceGlob = path.join(terriaWebRoot, '**');
 
     // gulp.watch as of gulp v4.0.0 doesn't work with backslashes (the task is never triggered).
@@ -129,7 +129,7 @@ gulp.task('copy-editor', function() {
 // Generate new schema for editor, and copy it over whatever version came with editor.
 gulp.task('make-editor-schema', gulp.series('copy-editor', function makeEditorSchema() {
     var generateSchema = require('generate-terriajs-schema');
-    var schemaSourceGlob = require('terriajs/buildprocess/schemaSourceGlob');
+    var schemaSourceGlob = require('leylinesjs/buildprocess/schemaSourceGlob');
 
     return generateSchema({
         sourceGlob: schemaSourceGlob,
@@ -141,10 +141,10 @@ gulp.task('make-editor-schema', gulp.series('copy-editor', function makeEditorSc
 }));
 
 gulp.task('lint', function(done) {
-    var runExternalModule = require('terriajs/buildprocess/runExternalModule');
+    var runExternalModule = require('leylinesjs/buildprocess/runExternalModule');
 
     runExternalModule('eslint/bin/eslint.js', [
-        '-c', path.join(getPackageRoot('terriajs'), '.eslintrc'),
+        '-c', path.join(getPackageRoot('leylinesjs'), '.eslintrc'),
         '--ignore-pattern', 'lib/ThirdParty',
         '--max-warnings', '0',
         'index.js',
@@ -311,7 +311,7 @@ gulp.task('watch-datasource-templates', gulp.series('render-datasource-templates
 
 gulp.task('sync-terriajs-dependencies', function(done) {
     var appPackageJson = require('./package.json');
-    var terriaPackageJson = require('terriajs/package.json');
+    var terriaPackageJson = require('leylinesjs/package.json');
 
     syncDependencies(appPackageJson.dependencies, terriaPackageJson);
     syncDependencies(appPackageJson.devDependencies, terriaPackageJson);
@@ -340,12 +340,12 @@ function syncDependencies(dependencies, targetJson, justWarn) {
 function checkForDuplicateCesium() {
     var fse = require('fs-extra');
 
-    if (fse.existsSync('node_modules/terriajs-cesium') && fse.existsSync('node_modules/terriajs/node_modules/terriajs-cesium')) {
+    if (fse.existsSync('node_modules/terriajs-cesium') && fse.existsSync('node_modules/leylinesjs/node_modules/terriajs-cesium')) {
         console.log('You have two copies of terriajs-cesium, one in this application\'s node_modules\n' +
-                    'directory and the other in node_modules/terriajs/node_modules/terriajs-cesium.\n' +
+                    'directory and the other in node_modules/leylinesjs/node_modules/terriajs-cesium.\n' +
                     'This leads to strange problems, such as knockout observables not working.\n' +
                     'Please verify that node_modules/terriajs-cesium is the correct version and\n' +
-                    '  rm -rf node_modules/terriajs/node_modules/terriajs-cesium\n' +
+                    '  rm -rf node_modules/leylinesjs/node_modules/terriajs-cesium\n' +
                     'Also consider running:\n' +
                     '  yarn gulp sync-terriajs-dependencies\n' +
                     'to prevent this problem from recurring the next time you `npm install`.');
