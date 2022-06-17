@@ -5,7 +5,7 @@
       "packages/leylinesjs",
       "packages/cesium",
       "packages/leylinesjs-server",
-      "packages/plugin-api",
+      "packages/leylinesjs-plugin-api",
       "packages/plugin-sample"
     ],
     "nohoist": [
@@ -26,7 +26,7 @@
   "dependencies": {
     "pm2": "^3.2.2",
     "leylinesjs-server": "https://github.com/leylines/leylinesjs-server",
-    "terriajs-plugin-api": "0.0.1-alpha.4",
+    "leylinesjs-plugin-api": "https://github.com/leylines/leylinesjs-plugin-api",
     "terriajs-plugin-sample": "0.0.1-alpha.5"
   },
   "config": {
