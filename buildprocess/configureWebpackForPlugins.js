@@ -28,7 +28,7 @@ function createPluginIconsRule() {
       const packageName = readPackageName(
         path.resolve(dirName, "..", "..", "package.json")
       );
-      const isTerriaJsPlugin = packageName ? packageName.startsWith("leylines-plugin-") : false
+      const isTerriaJsPlugin = packageName ? packageName.startsWith("leylinesjs-plugin-") : false
       packageNames[svgPath] = packageName;
       return isTerriaJsPlugin;
     },
@@ -37,7 +37,7 @@ function createPluginIconsRule() {
       esModule: false,
       symbolId: svgPath => {
         // Generate a symbolId by concatenating the package name and the icon name
-        const packageName = packageNames[svgPath] || "leylines-plugin-";
+        const packageName = packageNames[svgPath] || "leylinesjs-plugin-";
         const iconName = path.basename(svgPath, ".svg");
         const symbolId = `${packageName}-${iconName}`;
         return symbolId;
