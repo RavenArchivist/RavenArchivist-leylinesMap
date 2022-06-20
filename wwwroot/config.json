@@ -5,6 +5,11 @@
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": null,
     "googleAnalyticsOptions": null,
+    "bingMapsKey": "Ar2EmKvPSqMPwjLanIEHgtO-r8h0cBPrP2D0Rx_Ejqy22LvRl4UvqZor1xSTtq4G",
+
+    "useCesiumIonTerrain": true,
+    "cesiumIonAccessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiY2MyZjMxNS01NjI0LTQ3MjMtOTM3MC01NTZiODZkOTdlZjgiLCJpZCI6MTA3LCJpYXQiOjE1MjU0MjA2ODd9.VX2WAx6oqH1yiSxA7heQYax9jhq_p1gBtd1IrRHKzko",
+    "useCesiumIonBingImagery": true,
 
     // Log ConsoleAnalytics events to console
     // logToConsole: true,
@@ -12,7 +17,7 @@
     /* Text that appears at the bottom of the map */
     "disclaimer": {
       "text": "Disclaimer: This map must not be used for navigation or precise spatial analysis",
-      "url": ""
+      "url": "https://www.leylines.net"
     },
     /*
         // Text that will be added to any pages printed from your site.
@@ -35,22 +40,22 @@
     //     enableOnLocalhost: true // If false, don't show this when running on localhost
     // },
 
-    /*
-        developerAttribution: {
-            text: "Your organisation",
-            link: "http://www.example.com"
-        },*/
+    "developerAttribution": {
+        "text": "Joerg Roth",
+        "link": "https://www.leylines.net"
+    },
+
     // This is used in various text messages. You should also set <title> in index.html
-    "appName": "Terria Map",
+    "appName": "Leylines Map",
 
     // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
     "brandBarElements": [
       "",
-      "<a target=\"_blank\" href=\"https://terria.io\"><img src=\"images/terria_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
+      "<a target=\"_blank\" href=\"https://www.leylines.net\"><img src=\"images/leylines-logo.svg\" height=\"52\" title=\"Version: {{version}}\" style=\"position:relative; left:30%;\"/></a>",
       ""
     ],
     // Shown when things go wrong.
-    "supportEmail": "help@example.com",
+    "supportEmail": "info@leylines.net",
     // You probably shouldn't change this.
     "proj4ServiceBaseUrl": "proj4def/",
     // Or this
@@ -58,7 +63,7 @@
 
     // Default mobile viewer mode when loading the map for the first time on mobile platforms.
     // Options are: "3DTerrain", "3DSmooth", "2D"
-    "mobileDefaultViewerMode": "2d",
+    "mobileDefaultViewerMode": "3DTerrain",
     // Enable experimental features, since its nice to have the bleeding edge.
     // Disable it if things go wrong with the experimental features or your users aren't robust to features which might change or disapear completly.
     "experimentalFeatures": true,

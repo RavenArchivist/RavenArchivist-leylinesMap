@@ -24,8 +24,8 @@ import BingMapsSearchProviderViewModel from 'leylinesjs/lib/Models/SearchProvide
 import render from './lib/Views/render';
 import registerCatalogMembers from 'leylinesjs/lib/Models/Catalog/registerCatalogMembers';
 import defined from 'terriajs-cesium/Source/Core/defined';
-import loadPlugins from "./lib/Core/loadPlugins";
-import plugins from "./plugins";
+// import loadPlugins from "./lib/Core/loadPlugins";
+// import plugins from "./plugins";
 
 // Register all types of catalog members in the core TerriaJS.  If you only want to register a subset of them
 // (i.e. to reduce the size of your application if you don't actually use them all), feel free to copy a subset of
@@ -75,17 +75,18 @@ module.exports = terria.start({
 }).finally(function() {
   // Load plugins before reading the application URL and loading init sources
   // as plugins can register new catalog member types.
-  loadPlugins(viewState, plugins)
-    .catch(error => {
-      console.error(`Error loading plugins`);
-      console.error(error);
-    })
-    .finally(() => {
+  //loadPlugins(viewState, plugins)
+    //.catch(error => {
+    //  console.error(`Error loading plugins`);
+    //  console.error(error);
+    //})
+    //.finally(() => {
+    //.catch(() => {
       terria.updateApplicationUrl(window.location.href);
       terria
         .loadInitSources()
         .then(result => result.raiseError(terria));
-    });
+    //});
 
     try {
         viewState.searchState.locationSearchProviders = [

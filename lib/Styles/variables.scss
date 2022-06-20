@@ -26,6 +26,22 @@ $color-primary-dark:darken($color-primary,10%);
 $dark-darker: hsl(0,30%,15%);
 */
 
+$color-primary: hsl(0, 0%, 64%);
+$color-secondary: darken(
+  $color-primary,
+  20%
+); // or: lighten($color-primary, 20%);
+
+// These variables set background panel colors
+$dark: hsl(0, 0%, 10%);
+$dark-with-overlay: hsl(0, 0, 10%);
+$dark-lighter: hsl(0, 0%, 20%);
+
+// You might find it helpful to define these and use them.
+$color-primary-light: lighten($color-primary, 10%);
+$color-primary-dark: darken($color-primary, 10%);
+$dark-darker: hsl(0, 0%, 0%);
+
 $focus-border-light-color: $text-light;
 $focus-border-dark-color: $text-dark;
 $focus-border-width: 2px;
