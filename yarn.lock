@@ -7487,9 +7487,9 @@ levn@~0.3.0:
     when "^3.7.7"
     yargs "^13.2.4"
 
-"leylinesjs@https://github.com/leylines/leylinesjs":
+"leylinesjs@https://github.com/leylines/leylinesjs#main":
   version "8.2.6"
-  resolved "https://github.com/leylines/leylinesjs#a11c8e32ac553e1696f4a5ee1e6edc03a55679be"
+  resolved "https://github.com/leylines/leylinesjs#2c374b7af18239ff1666dac5dd1af6476854921d"
   dependencies:
     "@babel/core" "^7.16.0"
     "@babel/parser" "^7.12.14"

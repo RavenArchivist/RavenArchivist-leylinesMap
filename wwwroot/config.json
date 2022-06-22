@@ -1,15 +1,13 @@
 {
   /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
-  "initializationUrls": ["simple"],
+  "initializationUrls": ["leylines"],
   "parameters": {
     "googleUrlShortenerKey": null,
     "googleAnalyticsKey": null,
     "googleAnalyticsOptions": null,
     "bingMapsKey": "Ar2EmKvPSqMPwjLanIEHgtO-r8h0cBPrP2D0Rx_Ejqy22LvRl4UvqZor1xSTtq4G",
-
     "useCesiumIonTerrain": true,
     "cesiumIonAccessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiY2MyZjMxNS01NjI0LTQ3MjMtOTM3MC01NTZiODZkOTdlZjgiLCJpZCI6MTA3LCJpYXQiOjE1MjU0MjA2ODd9.VX2WAx6oqH1yiSxA7heQYax9jhq_p1gBtd1IrRHKzko",
-    "useCesiumIonBingImagery": true,
 
     // Log ConsoleAnalytics events to console
     // logToConsole: true,
@@ -51,7 +49,7 @@
     // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
     "brandBarElements": [
       "",
-      "<a target=\"_blank\" href=\"https://www.leylines.net\"><img src=\"images/leylines-logo.svg\" height=\"52\" title=\"Version: {{version}}\" style=\"position:relative; left:30%;\"/></a>",
+      "<a target=\"_blank\" href=\"https://www.leylines.net\"><img src=\"images/leylines-logo.svg\" height=\"52\" title=\"Version: {{version}}\" /></a>",
       ""
     ],
     // Shown when things go wrong.

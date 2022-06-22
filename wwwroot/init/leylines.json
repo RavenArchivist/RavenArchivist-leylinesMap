@@ -1,0 +1,1822 @@
+{
+  "workbench": [],
+  "catalog": [
+    {
+      "id": "d4fSYm",
+      "type": "group",
+      "name": "Leylines",
+      "members": [
+        {
+          "id": "YzFuXn",
+          "type": "group",
+          "name": "Global Leylines",
+          "members": [
+            {
+              "id": "YTzkIe",
+              "type": "group",
+              "name": "Beckerhagens - Grid",
+              "members": [],
+              "description": "The idea of the Earth as a geometric shape goes back in history at least to the Pythagorean school of thinking in ancient Greece. Its famous adherent, Plato, wrote that ‘the earth, viewed from above, resembles a ball sewn from twelve pieces of skin. The octahedron, tetrahedron, icosahedrons and the dodecahedron complete the global grid. This information was put together by husband and wife team Becker and Hagens. William Becker is a Professor of Industrial Design at the University of Illinois, Chicago and Bethe Hagens is a Professor of Anthropology at Governors State University. This husband and wife team shows how these shapes worked into the ultimate Earth Grid which they call the Unified Vector Geometry 120 Polyhedron or the UVG120 ‘Earth Star‘.",
+              "shareKeys": [
+                "Root Group/Leylines/Global Leylines/Beckerhagens - Grid"
+              ]
+            },
+            {
+              "id": "NKIbIq",
+              "type": "group",
+              "name": "Planetary - Grid",
+              "members": [
+                {
+                  "type": "kml",
+                  "name": "Planetary Grid - Icosahedron",
+                  "description": "12 major energy vortexes of the Earth icosahedron grid",
+                  "url": "geo-data/planetary_grid/Planetary_Grid.kmz",
+                  "id": "pPJr4t",
+                  "shareKeys": [
+                    "Root Group/Leylines/Global Leylines/Planetary - Grid/Planetary Grid - Icosahedron"
+                  ]
+                }
+              ],
+              "description": "Planetary Grid as often seen in different online-articles.<br><img src='images/catalog/planetary_grid.jpg' width='100%' alt='Planetary Grid'>",
+              "shareKeys": [
+                "Root Group/Leylines/Global Leylines/Planetary - Grid"
+              ]
+            },
+            {
+              "id": "xGUbri",
+              "type": "group",
+              "name": "Great Circles",
+              "members": [],
+              "description": "Great Circles from important alignments and places",
+              "shareKeys": [
+                "Root Group/Leylines/Global Leylines/Great Circles"
+              ]
+            },
+            {
+              "type": "kml",
+              "name": "Pyramids of the World",
+              "description": "Pyramids of the World based on the film \"Revelations of the Pyramids\".",
+              "url": "geodata/leylines/climateviewer.org/Pyramids-of-the-World-ClimateViewer-3D.kmz",
+              "id": "BXeDrE",
+              "shareKeys": [
+                "Root Group/Leylines/Global Leylines/Pyramids of the World"
+              ]
+            }
+          ],
+          "description": "<img src='images/catalog/global-alignments.jpeg' width='100%' alt='Global Leylines'><br/>Alignments on a large scale. Ley Lines are said to be the veins of the earth and crisscross the entire planet. They are created through cracks in the tectonic plate, where the natural energy is released. Ley Lines can vary in width and believed to be the life blood of Mother Earth. They are thought by some, to have spiritual, healing and extraterrestrial significance. Ley Lines follow tracks or paths under the earth’s surface, which can stretch for miles that cross valleys, mountains and under the sea.",
+          "shareKeys": [
+            "Root Group/Leylines/Global Leylines"
+          ]
+        },
+        {
+          "id": "p8wSe4",
+          "type": "group",
+          "name": "Regional Alignments",
+          "members": [
+            {
+              "type": "kml",
+              "name": "Ancient Sites and Alignments of West Penwith",
+              "description": "This is a map of the ancient sites and alignments in West Penwith and in neighbouring areas. The Lizard, Isles of Scilly, Kerrier and East Penwith: these areas form a backdrop to the visual and geomantic landscape of ancient West Penwith. Penwith is a distinctive, mostly cliff-bound, island-like area, with a magical atmosphere and a ruggedness to the land and its residents. Trencrom Hill and St Michael's Mount act as geomantic gateposts to the peninsula. Nowadays, Penwith is at the end of the road, far from metropolitan England, but in ancient times it was a marine node in the Atlantic megalithic world.",
+              "url": "http://www.ancientpenwith.org/files/Penwith-Ancient-Sites---Alignments-April2016.kml",
+              "dataCustodian": "http://www.palden.co.uk/",
+              "legends": [
+                {
+                  "url": "http://www.ancientpenwith.org/key.html"
+                }
+              ],
+              "id": "UFZm5f",
+              "shareKeys": [
+                "Root Group/Leylines/Regional Alignments/Ancient Sites and Alignments of West Penwith"
+              ]
+            }
+          ],
+          "description": "<img src='images/catalog/regional-alignments.jpg' width='100%' alt='Regional Leylines'><br/>Regional alignments",
+          "shareKeys": [
+            "Root Group/Leylines/Regional Alignments"
+          ]
+        }
+      ],
+      "description": "<img src='images/catalog/leylines.jpg' width='100%' alt='Leylines'><br/>Ley lines are apparent alignments of places of significance in the geography or culture of an area, often including man-made structures. They are in the older sense, ancient, straight trackways in the British landscape, or in the newer sense, spiritual and mystical alignments of land forms.",
+      "shareKeys": [
+        "Root Group/Leylines"
+      ]
+    },
+    {
+      "id": "ciKNxN",
+      "type": "group",
+      "name": "Sites",
+      "members": [
+        {
+          "id": "NVPqfe",
+          "type": "group",
+          "name": "ramar.space",
+          "members": [],
+          "shareKeys": [
+            "Root Group/Sites/ramar.space"
+          ]
+        },
+        {
+          "id": "6jpDtQ",
+          "type": "group",
+          "name": "megalithic.co.uk",
+          "members": [
+            {
+              "type": "wms",
+              "name": "All Sites",
+              "description": "All Sites",
+              "url": "https://geoserver.leylines.ch/geoserver/megalithic/wms",
+              "opacity": 1,
+              "dataCustodian": "[The Megalithic Portal](http://www.megalithic.co.uk/)",
+              "layers": "sites-reduced",
+              "parameters": {
+                "tiled": true
+              },
+              "id": "c8itA4",
+              "shareKeys": [
+                "Root Group/Sites/megalithic.co.uk/All Sites"
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "Heatmap",
+              "description": "Heatmap of all sites",
+              "url": "https://geoserver.leylines.ch/geoserver/megalithic/wms",
+              "dataCustodian": "[The Megalithic Portal](http://www.megalithic.co.uk/)",
+              "layers": "sites-heatmap",
+              "parameters": {
+                "tiled": true
+              },
+              "id": "S7ZCgD",
+              "shareKeys": [
+                "Root Group/Sites/megalithic.co.uk/Heatmap"
+              ]
+            }
+          ],
+          "description": "The top destination for Megaliths and Prehistory worldwide. World-wide Ancient Site Database, Photos and Prehistoric Archaeology News with geolocation.",
+          "dataCustodian": "[The Megalithic Portal](http://www.megalithic.co.uk/)",
+          "shareKeys": [
+            "Root Group/Sites/megalithic.co.uk"
+          ]
+        },
+        {
+          "id": "VwEcKX",
+          "type": "group",
+          "name": "www.geolines.ru",
+          "members": [
+            {
+              "type": "kml",
+              "name": "Historical Objects",
+              "url": "geo-data/geolines.ru/HISTORICAL_OBJECTS_04.kmz",
+              "dataCustodian": "[Geolines.ru](http://www.geolines.ru/)",
+              "id": "1U2Pqn",
+              "shareKeys": [
+                "Root Group/Sites/www.geolines.ru/Historical Objects"
+              ]
+            },
+            {
+              "id": "WgiEns",
+              "type": "group",
+              "name": "System of Ancient Monumental Construcions",
+              "members": [
+                {
+                  "type": "kml",
+                  "name": "Historical Objects",
+                  "url": "geo-data/geolines.ru/historical_objects.kmz",
+                  "dataCustodian": "[Geolines.ru](http://www.geolines.ru/)",
+                  "id": "Wvk275",
+                  "shareKeys": [
+                    "Root Group/Sites/www.geolines.ru/System of Ancient Monumental Construcions/Historical Objects"
+                  ]
+                },
+                {
+                  "type": "kml",
+                  "name": "Karcas",
+                  "url": "geo-data/geolines.ru/karcas.kmz",
+                  "dataCustodian": "[Geolines.ru](http://www.geolines.ru/)",
+                  "id": "6ipIJ5",
+                  "shareKeys": [
+                    "Root Group/Sites/www.geolines.ru/System of Ancient Monumental Construcions/Karcas"
+                  ]
+                },
+                {
+                  "type": "kml",
+                  "name": "Pentagram",
+                  "url": "geo-data/geolines.ru/pentagram.kmz",
+                  "dataCustodian": "[Geolines.ru](http://www.geolines.ru/)",
+                  "id": "mSa8vf",
+                  "shareKeys": [
+                    "Root Group/Sites/www.geolines.ru/System of Ancient Monumental Construcions/Pentagram"
+                  ]
+                },
+                {
+                  "type": "kml",
+                  "name": "Octagon",
+                  "url": "geo-data/geolines.ru/octagon.kmz",
+                  "dataCustodian": "[Geolines.ru](http://www.geolines.ru/)",
+                  "id": "hpSpZm",
+                  "shareKeys": [
+                    "Root Group/Sites/www.geolines.ru/System of Ancient Monumental Construcions/Octagon"
+                  ]
+                },
+                {
+                  "type": "kml",
+                  "name": "Hexagram",
+                  "url": "geo-data/geolines.ru/hexagram.kmz",
+                  "dataCustodian": "[Geolines.ru](http://www.geolines.ru/)",
+                  "id": "ERbZGI",
+                  "shareKeys": [
+                    "Root Group/Sites/www.geolines.ru/System of Ancient Monumental Construcions/Hexagram"
+                  ]
+                },
+                {
+                  "type": "kml",
+                  "name": "Nonagon",
+                  "url": "geo-data/geolines.ru/nonagon.kmz",
+                  "dataCustodian": "[Geolines.ru](http://www.geolines.ru/)",
+                  "id": "xGEJes",
+                  "shareKeys": [
+                    "Root Group/Sites/www.geolines.ru/System of Ancient Monumental Construcions/Nonagon"
+                  ]
+                }
+              ],
+              "dataCustodian": "[Geolines.ru](http://www.geolines.ru/)",
+              "shareKeys": [
+                "Root Group/Sites/www.geolines.ru/System of Ancient Monumental Construcions"
+              ]
+            },
+            {
+              "type": "kml",
+              "name": "Nazca Lines and Figures",
+              "url": "geo-data/geolines.ru/NAZCA_LINES_00_0411_fz.kmz",
+              "rectangle": {
+                "west": -75.6,
+                "south": -15.2,
+                "east": -74.7,
+                "north": -14.4
+              },
+              "dataCustodian": "[Geolines.ru](http://www.geolines.ru/)",
+              "id": "AS6yrs",
+              "shareKeys": [
+                "Root Group/Sites/www.geolines.ru/Nazca Lines and Figures"
+              ]
+            },
+            {
+              "type": "kml",
+              "name": "Historic Geodesy",
+              "url": "geo-data/geolines.ru/THE_HISTORICAL_GEODESY00.kmz",
+              "dataCustodian": "[Geolines.ru](http://www.geolines.ru/)",
+              "id": "2zxEm4",
+              "shareKeys": [
+                "Root Group/Sites/www.geolines.ru/Historic Geodesy"
+              ]
+            },
+            {
+              "type": "kml",
+              "name": "Chinese Pyramids",
+              "url": "geo-data/geolines.ru/CHINESE_PYRAMIDS.kmz",
+              "rectangle": {
+                "west": 108.1,
+                "south": 33.9,
+                "east": 109.4,
+                "north": 34.8
+              },
+              "dataCustodian": "[Geolines.ru](http://www.geolines.ru/)",
+              "id": "yKMbI3",
+              "shareKeys": [
+                "Root Group/Sites/www.geolines.ru/Chinese Pyramids"
+              ]
+            },
+            {
+              "type": "kml",
+              "name": "The New Atlantis",
+              "url": "geo-data/geolines.ru/THE_NEW_ATLANTIS_ENG.kmz",
+              "rectangle": {
+                "west": -77.4,
+                "south": 38.7,
+                "east": -76.7,
+                "north": 39.2
+              },
+              "dataCustodian": "[Geolines.ru](http://www.geolines.ru/)",
+              "id": "vjr4gj",
+              "shareKeys": [
+                "Root Group/Sites/www.geolines.ru/The New Atlantis"
+              ]
+            }
+          ],
+          "shareKeys": [
+            "Root Group/Sites/www.geolines.ru"
+          ]
+        },
+        {
+          "id": "mLKCCT",
+          "type": "group",
+          "name": "www.earthenergymap.com",
+          "members": [
+            {
+              "type": "kml",
+              "name": "Dowsing Map",
+              "description": "The Earth Energy Map has been developed to allow Earth Energy dowsers to share their results. The hope is that by putting the pieces together, a bigger picture will emerge.",
+              "url": "http://www.earthenergymap.com/kmz?neLat=90.0&neLng=180.0&swLat=-90.0&swLng=-180.0",
+              "dataCustodian": "[Earth Energy Map](http://www.earthenergymap.com/)",
+              "id": "aHULp2",
+              "shareKeys": [
+                "Root Group/Sites/www.earthenergymap.com/Dowsing Map"
+              ]
+            }
+          ],
+          "description": "The Earth Energy Map has been developed to allow Earth Energy dowsers to share their results. The hope is that by putting the pieces together, a bigger picture will emerge.",
+          "dataCustodian": "[Earth Energy Map](http://www.earthenergymap.com/)",
+          "shareKeys": [
+            "Root Group/Sites/www.earthenergymap.com"
+          ]
+        }
+      ],
+      "shareKeys": [
+        "Root Group/Sites"
+      ]
+    },
+    {
+      "id": "hxp2hQ",
+      "type": "group",
+      "name": "Points of Interest",
+      "members": [
+        {
+          "type": "wms",
+          "name": "Heatmap",
+          "description": "Heatmap of all sites",
+          "url": "https://geoserver.leylines.ch/geoserver/leylines/wms",
+          "dataCustodian": "[www.leylines.ch](http://www.leylines.ch/)",
+          "layers": "poi-heatmap",
+          "parameters": {
+            "tiled": true
+          },
+          "id": "bzKXd8",
+          "shareKeys": [
+            "Root Group/Points of Interest/Heatmap"
+          ]
+        }
+      ],
+      "description": "Point of interest relative to Ley Lines and alignments in different categories.",
+      "shareKeys": [
+        "Root Group/Points of Interest"
+      ]
+    },
+    {
+      "id": "3M23Fj",
+      "type": "group",
+      "name": "Environment",
+      "members": [
+        {
+          "id": "KBhxe2",
+          "type": "group",
+          "name": "Electrical Conductivity",
+          "members": [
+            {
+              "type": "wms",
+              "name": "Bedrock Electrical Conductivity UK",
+              "description": "Near-surface bedrock conductivity distribution produced by lithological classification. Map of the UK",
+              "url": "https://geoserver.leylines.ch/environment/wms",
+              "opacity": 1,
+              "dataCustodian": "[www.sciencedirect.com](https://www.sciencedirect.com/science/article/pii/S0926985113001183)",
+              "layers": "conductivity_gb",
+              "parameters": {
+                "tiled": true
+              },
+              "id": "iuQtmu",
+              "shareKeys": [
+                "Root Group/Environment/Electrical Conductivity/Bedrock Electrical Conductivity UK"
+              ]
+            }
+          ],
+          "description": "Electrical conductivity or specific conductance is the reciprocal of electrical resistivity. It represents a material's ability to conduct electric current. It is commonly signified by the Greek letter σ (sigma), but κ (kappa) (especially in electrical engineering) and γ (gamma) are sometimes used. The SI unit of electrical conductivity is siemens per metre (S/m).",
+          "shareKeys": [
+            "Root Group/Environment/Electrical Conductivity"
+          ]
+        },
+        {
+          "id": "YpwIAf",
+          "type": "group",
+          "name": "Biogeography",
+          "members": [
+            {
+              "type": "wms",
+              "name": "Terrestrial Ecoregions",
+              "description": "Terrestrial Ecoregions of the World (TEOW) is a bio-geographic regionalization of the Earth's terrestrial biodiversity. TEOW uses ecoregions to represent the original distribution of distinct assemblages of species and communities across the globe.",
+              "url": "https://geoserver.leylines.ch/environment/wms",
+              "opacity": 1,
+              "dataCustodian": "[www.leylines.ch](http://www.leylines.ch/index.html#contact)",
+              "layers": "terrestrial_ecoregions",
+              "parameters": {
+                "tiled": true
+              },
+              "id": "L8TPQI",
+              "shareKeys": [
+                "Root Group/Environment/Biogeography/Terrestrial Ecoregions"
+              ]
+            }
+          ],
+          "description": "Biogeography is the study of the distribution of species and ecosystems in geographic space and through geological time. Organisms and biological communities often vary in a regular fashion along geographic gradients of latitude, elevation, isolation and habitat area.",
+          "shareKeys": [
+            "Root Group/Environment/Biogeography"
+          ]
+        },
+        {
+          "id": "QTMbZQ",
+          "type": "group",
+          "name": "Earth Magnetic Field",
+          "members": [
+            {
+              "type": "wms",
+              "name": "Historical Track of Poles",
+              "description": "Modeled Historical Track of Poles ",
+              "url": "https://gis.ngdc.noaa.gov/arcgis/services/historical_declination/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+              "opacity": 1,
+              "dataCustodian": "[maps.ngdc.noaa.gov](https://maps.ngdc.noaa.gov/)",
+              "layers": "3",
+              "parameters": {
+                "tiled": true
+              },
+              "id": "sfkFEl",
+              "shareKeys": [
+                "Root Group/Environment/Earth Magnetic Field/Historical Track of Poles"
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "Isogonic Lines (Web Mercator)",
+              "description": "Magnetic declination is an important concept for accurate navigation. A compass will always point along the lines of magnetic force (which converge on what are called the magnetic poles). The angle between the direction of force and the direction of the geographic north pole is called the declination. If a compass at your location is pointing to the right of true north, declination is positive or east, and if it points to the left of true north, declination is negative or west. As one moves across the surface of the globe, lines of constant magnetic declination are called isogonic lines.",
+              "url": "https://gis.ngdc.noaa.gov/arcgis/services/historical_declination/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+              "opacity": 1,
+              "dataCustodian": "[maps.ngdc.noaa.gov](https://maps.ngdc.noaa.gov/)",
+              "layers": "2",
+              "parameters": {
+                "tiled": true
+              },
+              "id": "aNQZYT",
+              "shareKeys": [
+                "Root Group/Environment/Earth Magnetic Field/Isogonic Lines (Web Mercator)"
+              ]
+            }
+          ],
+          "description": "Earth's magnetic field (and the surface magnetic field) is approximately a magnetic dipole, with the magnetic field S pole near the Earth's geographic north pole and the other magnetic field N pole near the Earth's geographic south pole.",
+          "shareKeys": [
+            "Root Group/Environment/Earth Magnetic Field"
+          ]
+        },
+        {
+          "id": "rKhqJG",
+          "type": "group",
+          "name": "Mines, Deposits and Occurrences",
+          "members": [
+            {
+              "type": "wms",
+              "name": "Mineral Resource Data System",
+              "description": "Mineral Resource Data System",
+              "url": "https://mrdata.usgs.gov/services/mrds?request=getcapabilities&service=WMS&version=1.1.1&",
+              "dataCustodian": "[mrdata.usgs.gov](https://mrdata.usgs.gov)",
+              "layers": "mrds",
+              "parameters": {
+                "tiled": true
+              },
+              "id": "sCxPrd",
+              "shareKeys": [
+                "Root Group/Environment/Mines, Deposits and Occurrences/Mineral Resource Data System"
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "Rare Earth",
+              "description": "Rare Earth",
+              "url": "https://mrdata.usgs.gov/services/ree?request=getcapabilities&service=WMS&version=1.1.1&",
+              "dataCustodian": "[mrdata.usgs.gov](https://mrdata.usgs.gov)",
+              "layers": "ree",
+              "parameters": {
+                "tiled": true
+              },
+              "id": "ubPRpD",
+              "shareKeys": [
+                "Root Group/Environment/Mines, Deposits and Occurrences/Rare Earth"
+              ]
+            }
+          ],
+          "description": "Mines, deposits and occurrences-maps",
+          "shareKeys": [
+            "Root Group/Environment/Mines, Deposits and Occurrences"
+          ]
+        },
+        {
+          "id": "WpHUMa",
+          "type": "group",
+          "name": "Historical Natural Hazards",
+          "members": [
+            {
+              "type": "wms",
+              "name": "Tsunami Events",
+              "description": "Tsunami Events",
+              "url": "https://gis.ngdc.noaa.gov/arcgis/services/web_mercator/hazards/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+              "dataCustodian": "[maps.ngdc.noaa.gov](https://maps.ngdc.noaa.gov/)",
+              "layers": "10",
+              "parameters": {
+                "tiled": true
+              },
+              "id": "iVCjkS",
+              "shareKeys": [
+                "Root Group/Environment/Historical Natural Hazards/Tsunami Events"
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "Significant Earthquakes",
+              "description": "Significant Earthquakes",
+              "url": "https://gis.ngdc.noaa.gov/arcgis/services/web_mercator/hazards/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+              "dataCustodian": "[maps.ngdc.noaa.gov](https://maps.ngdc.noaa.gov/)",
+              "layers": "6",
+              "parameters": {
+                "tiled": true
+              },
+              "id": "nekQuF",
+              "shareKeys": [
+                "Root Group/Environment/Historical Natural Hazards/Significant Earthquakes"
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "Significant Volcanic Eruptions",
+              "description": "Significant Volcanic Eruptions",
+              "url": "https://gis.ngdc.noaa.gov/arcgis/services/web_mercator/hazards/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+              "dataCustodian": "[maps.ngdc.noaa.gov](https://maps.ngdc.noaa.gov/)",
+              "layers": "5",
+              "parameters": {
+                "tiled": true
+              },
+              "id": "LJ6Crt",
+              "shareKeys": [
+                "Root Group/Environment/Historical Natural Hazards/Significant Volcanic Eruptions"
+              ]
+            }
+          ],
+          "shareKeys": [
+            "Root Group/Environment/Historical Natural Hazards"
+          ]
+        },
+        {
+          "id": "YYxTih",
+          "type": "group",
+          "name": "Earthquakes",
+          "members": [
+            {
+              "type": "kml",
+              "name": "Past 7 Days, M1.0+ Earthquakes ",
+              "description": "Colored by Depth, Animated",
+              "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/1.0_week_depth_animated.kml",
+              "dataCustodian": "[earthquake.usgs.gov](https://earthquake.usgs.gov)",
+              "id": "hPP527",
+              "shareKeys": [
+                "Root Group/Environment/Earthquakes/Past 7 Days, M1.0+ Earthquakes "
+              ]
+            },
+            {
+              "type": "kml",
+              "name": "Past 30 Days, M2.5+ Earthquakes",
+              "description": "Colored by Depth, Animated",
+              "url": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/2.5_month_depth_animated.kml",
+              "dataCustodian": "[earthquake.usgs.gov](https://earthquake.usgs.gov)",
+              "id": "7M7c65",
+              "shareKeys": [
+                "Root Group/Environment/Earthquakes/Past 30 Days, M2.5+ Earthquakes"
+              ]
+            }
+          ],
+          "description": "The USGS Earthquake Hazards Program is part of the <a href='http://www.nehrp.gov/'>National Earthquake Hazards Reduction Program (NEHRP)</a>, established by Congress in 1977.",
+          "shareKeys": [
+            "Root Group/Environment/Earthquakes"
+          ]
+        },
+        {
+          "id": "37VZkz",
+          "type": "group",
+          "name": "Geology",
+          "members": [
+            {
+              "id": "rZHCde",
+              "type": "group",
+              "name": "Paleo Plate Tectonics",
+              "members": [
+                {
+                  "type": "geojson",
+                  "name": "20Ma years ago",
+                  "description": "Coastlines 20Ma years ago",
+                  "url": "https://gws.gplates.org/reconstruct/coastlines?time=20",
+                  "dataCustodian": "[portal.gplates.org/](http://portal.gplates.org/)",
+                  "id": "58uLvK",
+                  "shareKeys": [
+                    "Root Group/Environment/Geology/Paleo Plate Tectonics/20Ma years ago"
+                  ]
+                },
+                {
+                  "type": "geojson",
+                  "name": "40Ma years ago",
+                  "description": "Coastlines 40Ma years ago",
+                  "url": "https://gws.gplates.org/reconstruct/coastlines?time=40",
+                  "dataCustodian": "[portal.gplates.org/](http://portal.gplates.org/)",
+                  "id": "LVeTXH",
+                  "shareKeys": [
+                    "Root Group/Environment/Geology/Paleo Plate Tectonics/40Ma years ago"
+                  ]
+                },
+                {
+                  "type": "geojson",
+                  "name": "60Ma years ago",
+                  "description": "Coastlines 60Ma years ago",
+                  "url": "https://gws.gplates.org/reconstruct/coastlines?time=60",
+                  "dataCustodian": "[portal.gplates.org/](http://portal.gplates.org/)",
+                  "id": "5nqmy1",
+                  "shareKeys": [
+                    "Root Group/Environment/Geology/Paleo Plate Tectonics/60Ma years ago"
+                  ]
+                },
+                {
+                  "type": "geojson",
+                  "name": "80Ma years ago",
+                  "description": "Coastlines 80Ma years ago",
+                  "url": "https://gws.gplates.org/reconstruct/coastlines?time=80",
+                  "dataCustodian": "[portal.gplates.org/](http://portal.gplates.org/)",
+                  "id": "4s4rnN",
+                  "shareKeys": [
+                    "Root Group/Environment/Geology/Paleo Plate Tectonics/80Ma years ago"
+                  ]
+                },
+                {
+                  "type": "geojson",
+                  "name": "100Ma years ago",
+                  "description": "Coastlines 100Ma years ago",
+                  "url": "https://gws.gplates.org/reconstruct/coastlines?time=100",
+                  "dataCustodian": "[portal.gplates.org/](http://portal.gplates.org/)",
+                  "id": "6NiGgR",
+                  "shareKeys": [
+                    "Root Group/Environment/Geology/Paleo Plate Tectonics/100Ma years ago"
+                  ]
+                },
+                {
+                  "type": "geojson",
+                  "name": "120Ma years ago",
+                  "description": "Coastlines 120Ma years ago",
+                  "url": "https://gws.gplates.org/reconstruct/coastlines?time=120",
+                  "dataCustodian": "[portal.gplates.org/](http://portal.gplates.org/)",
+                  "id": "X8FKUC",
+                  "shareKeys": [
+                    "Root Group/Environment/Geology/Paleo Plate Tectonics/120Ma years ago"
+                  ]
+                },
+                {
+                  "type": "geojson",
+                  "name": "140Ma years ago",
+                  "description": "Coastlines 140Ma years ago",
+                  "url": "https://gws.gplates.org/reconstruct/coastlines?time=140",
+                  "dataCustodian": "[portal.gplates.org/](http://portal.gplates.org/)",
+                  "id": "deTdmR",
+                  "shareKeys": [
+                    "Root Group/Environment/Geology/Paleo Plate Tectonics/140Ma years ago"
+                  ]
+                },
+                {
+                  "type": "geojson",
+                  "name": "160Ma years ago",
+                  "description": "Coastlines 160Ma years ago",
+                  "url": "https://gws.gplates.org/reconstruct/coastlines?time=160",
+                  "dataCustodian": "[portal.gplates.org/](http://portal.gplates.org/)",
+                  "id": "aQguer",
+                  "shareKeys": [
+                    "Root Group/Environment/Geology/Paleo Plate Tectonics/160Ma years ago"
+                  ]
+                },
+                {
+                  "type": "geojson",
+                  "name": "180Ma years ago",
+                  "description": "Coastlines 180Ma years ago",
+                  "url": "https://gws.gplates.org/reconstruct/coastlines?time=180",
+                  "dataCustodian": "[portal.gplates.org/](http://portal.gplates.org/)",
+                  "id": "PurK2b",
+                  "shareKeys": [
+                    "Root Group/Environment/Geology/Paleo Plate Tectonics/180Ma years ago"
+                  ]
+                },
+                {
+                  "type": "geojson",
+                  "name": "200Ma years ago",
+                  "description": "Coastlines 200Ma years ago",
+                  "url": "https://gws.gplates.org/reconstruct/coastlines?time=200",
+                  "dataCustodian": "[portal.gplates.org/](http://portal.gplates.org/)",
+                  "id": "LtMbzB",
+                  "shareKeys": [
+                    "Root Group/Environment/Geology/Paleo Plate Tectonics/200Ma years ago"
+                  ]
+                }
+              ],
+              "description": "Coastlines from 20 to 200Ma years ago",
+              "shareKeys": [
+                "Root Group/Environment/Geology/Paleo Plate Tectonics"
+              ]
+            },
+            {
+              "id": "NIvW8g",
+              "type": "group",
+              "name": "CGMW World 1:50M",
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Geological Units Onshore",
+                  "url": "https://mapsref.brgm.fr/wxs/1GG/CGMW_Bedrock_and_Structural_Geology?",
+                  "dataCustodian": "[mapsref.brgm.fr](https://mapsref.brgm.fr)",
+                  "layers": "World_CGMW_50M_GeologicalUnitsOnshore",
+                  "parameters": {
+                    "tiled": true
+                  },
+                  "id": "Kb6TeX",
+                  "shareKeys": [
+                    "Root Group/Environment/Geology/CGMW World 1:50M/Geological Units Onshore"
+                  ]
+                },
+                {
+                  "type": "wms",
+                  "name": "Geological Units Offshore",
+                  "url": "https://mapsref.brgm.fr/wxs/1GG/CGMW_Bedrock_and_Structural_Geology?",
+                  "dataCustodian": "[mapsref.brgm.fr](https://mapsref.brgm.fr)",
+                  "layers": "World_CGMW_50M_GeologicalUnitsOffshore",
+                  "parameters": {
+                    "tiled": true
+                  },
+                  "id": "Kvs34H",
+                  "shareKeys": [
+                    "Root Group/Environment/Geology/CGMW World 1:50M/Geological Units Offshore"
+                  ]
+                },
+                {
+                  "type": "wms",
+                  "name": "Oceanic Plateau",
+                  "url": "https://mapsref.brgm.fr/wxs/1GG/CGMW_Bedrock_and_Structural_Geology?",
+                  "dataCustodian": "[mapsref.brgm.fr](https://mapsref.brgm.fr)",
+                  "layers": "World_CGMW_50M_OceanicPlateau",
+                  "parameters": {
+                    "tiled": true
+                  },
+                  "id": "5ZarJy",
+                  "shareKeys": [
+                    "Root Group/Environment/Geology/CGMW World 1:50M/Oceanic Plateau"
+                  ]
+                },
+                {
+                  "type": "wms",
+                  "name": "Over Features",
+                  "url": "https://mapsref.brgm.fr/wxs/1GG/CGMW_Bedrock_and_Structural_Geology?",
+                  "dataCustodian": "[mapsref.brgm.fr](https://mapsref.brgm.fr)",
+                  "layers": "World_CGMW_50M_OverFeatures",
+                  "parameters": {
+                    "tiled": true
+                  },
+                  "id": "kR2esS",
+                  "shareKeys": [
+                    "Root Group/Environment/Geology/CGMW World 1:50M/Over Features"
+                  ]
+                },
+                {
+                  "type": "wms",
+                  "name": "Structural",
+                  "url": "https://mapsref.brgm.fr/wxs/1GG/CGMW_Bedrock_and_Structural_Geology?",
+                  "dataCustodian": "[mapsref.brgm.fr](https://mapsref.brgm.fr)",
+                  "layers": "World_CGMW_50M_Structural",
+                  "parameters": {
+                    "tiled": true
+                  },
+                  "id": "aisfRn",
+                  "shareKeys": [
+                    "Root Group/Environment/Geology/CGMW World 1:50M/Structural"
+                  ]
+                }
+              ],
+              "shareKeys": [
+                "Root Group/Environment/Geology/CGMW World 1:50M"
+              ]
+            },
+            {
+              "type": "esri-mapServer",
+              "name": "Sediment Thickness",
+              "url": "https://gis.ngdc.noaa.gov/arcgis/rest/services/web_mercator/sediment_thickness/MapServer",
+              "opacity": 1,
+              "dataCustodian": "[ngdc.noaa.gov](http://ngdc.noaa.gov/mgg/sedthick)",
+              "layers": "2000m index contours - all scales",
+              "id": "Ywjc1J",
+              "shareKeys": [
+                "Root Group/Environment/Geology/Sediment Thickness"
+              ]
+            },
+            {
+              "id": "rnKaX6",
+              "type": "group",
+              "name": "CGMW Eurasia 1:12,5M",
+              "members": [
+                {
+                  "type": "wms",
+                  "name": "Geological Units",
+                  "url": "https://mapsref.brgm.fr/wxs/1GG/CGMW_Bedrock_and_Structural_Geology?",
+                  "dataCustodian": "[mapsref.brgm.fr](https://mapsref.brgm.fr)",
+                  "layers": "Eurasia_CGMW_12500K_GeologicalUnits",
+                  "parameters": {
+                    "tiled": true
+                  },
+                  "id": "wFwqQv",
+                  "shareKeys": [
+                    "Root Group/Environment/Geology/CGMW Eurasia 1:12,5M/Geological Units"
+                  ]
+                },
+                {
+                  "type": "wms",
+                  "name": "Over Features",
+                  "url": "https://mapsref.brgm.fr/wxs/1GG/CGMW_Bedrock_and_Structural_Geology?",
+                  "dataCustodian": "[mapsref.brgm.fr](https://mapsref.brgm.fr)",
+                  "layers": "Eurasia_CGMW_12500K_OverFeatures",
+                  "parameters": {
+                    "tiled": true
+                  },
+                  "id": "eImLgM",
+                  "shareKeys": [
+                    "Root Group/Environment/Geology/CGMW Eurasia 1:12,5M/Over Features"
+                  ]
+                },
+                {
+                  "type": "wms",
+                  "name": "Structural",
+                  "url": "https://mapsref.brgm.fr/wxs/1GG/CGMW_Bedrock_and_Structural_Geology?",
+                  "dataCustodian": "[mapsref.brgm.fr](https://mapsref.brgm.fr)",
+                  "layers": "Eurasia_CGMW_12500K_Structural",
+                  "parameters": {
+                    "tiled": true
+                  },
+                  "id": "USzIyP",
+                  "shareKeys": [
+                    "Root Group/Environment/Geology/CGMW Eurasia 1:12,5M/Structural"
+                  ]
+                }
+              ],
+              "shareKeys": [
+                "Root Group/Environment/Geology/CGMW Eurasia 1:12,5M"
+              ]
+            }
+          ],
+          "description": "Geology is an earth science concerned with the solid Earth, the rocks of which it is composed, and the processes by which they change over time. Geology can also refer to the study of the solid features of any terrestrial planet or natural satellite.",
+          "shareKeys": [
+            "Root Group/Environment/Geology"
+          ]
+        },
+        {
+          "id": "pwLqTs",
+          "type": "group",
+          "name": "Artificial",
+          "members": [
+            {
+              "type": "esri-mapServer",
+              "name": "World Transportation",
+              "description": "This map presents transportation data, including highways, roads, railroads, and airports for the world.",
+              "url": "https://services.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer",
+              "dataCustodian": "[arcgis.com](http://hub.arcgis.com/datasets/94f838a535334cf1aa061846514b77c7)",
+              "id": "kv7dDN",
+              "shareKeys": [
+                "Root Group/Environment/Artificial/World Transportation"
+              ]
+            }
+          ],
+          "shareKeys": [
+            "Root Group/Environment/Artificial"
+          ]
+        },
+        {
+          "id": "XSnZsd",
+          "type": "group",
+          "name": "Volcanos",
+          "members": [],
+          "shareKeys": [
+            "Root Group/Environment/Volcanos"
+          ]
+        },
+        {
+          "id": "MxbXN3",
+          "type": "group",
+          "name": "Water & Ice",
+          "members": [
+            {
+              "type": "wms",
+              "name": "Rivers",
+              "description": "Rivers",
+              "url": "https://geoserver.leylines.ch/environment/wms",
+              "dataCustodian": "[www.leylines.ch](http://www.leylines.ch/index.html#contact)",
+              "layers": "rivers",
+              "parameters": {
+                "tiled": true
+              },
+              "id": "E3ZsG7",
+              "shareKeys": [
+                "Root Group/Environment/Water & Ice/Rivers"
+              ]
+            },
+            {
+              "type": "esri-mapServer-group",
+              "name": "World Water",
+              "description": "World Water",
+              "url": "https://services.bgr.de/rest/services/grundwasser/whymap_gwr/MapServer/",
+              "dataCustodian": "[bgr.de](https://geoviewer.bgr.de)",
+              "id": "LFuv1x",
+              "shareKeys": [
+                "Root Group/Environment/Water & Ice/World Water"
+              ]
+            },
+            {
+              "type": "esri-mapServer",
+              "name": "World Hydro Reference Overlay",
+              "description": "World Hydro Reference Overlay",
+              "url": "https://tiles.arcgis.com/tiles/P3ePLMYs2RVChkJx/arcgis/rest/services/Esri_Hydro_Reference_Overlay/MapServer",
+              "dataCustodian": "[arcgis.com](https://hub.arcgis.com/datasets/72b3c92478fb4f6e8878fe9650caaa51)",
+              "id": "kwArlX",
+              "shareKeys": [
+                "Root Group/Environment/Water & Ice/World Hydro Reference Overlay"
+              ]
+            },
+            {
+              "type": "esri-mapServer",
+              "name": "Sea Surface Water Temperature - Global (deg. F)",
+              "description": "Sea Surface Water Temperature - Global (deg. F)",
+              "url": "https://nowcoast.noaa.gov/arcgis/rest/services/nowcoast/analysis_ocean_sfc_sst_time/MapServer",
+              "dataCustodian": "[nowcoast.noaa.gov](https://nowcoast.noaa.gov/arcgis/rest/services/nowcoast)",
+              "layers": "7",
+              "id": "Jbezhl",
+              "shareKeys": [
+                "Root Group/Environment/Water & Ice/Sea Surface Water Temperature - Global (deg. F)"
+              ]
+            },
+            {
+              "type": "esri-mapServer",
+              "name": "Surface Water Currents w/Speed",
+              "description": "Surface Water Currents w/Speed",
+              "url": "https://nowcoast.noaa.gov/arcgis/rest/services/nowcoast/guidance_model_ocean_grtofs_time/MapServer",
+              "dataCustodian": "[nowcoast.noaa.gov](https://nowcoast.noaa.gov/arcgis/rest/services/nowcoast)",
+              "layers": "3",
+              "id": "5fPMse",
+              "shareKeys": [
+                "Root Group/Environment/Water & Ice/Surface Water Currents w/Speed"
+              ]
+            },
+            {
+              "type": "esri-mapServer",
+              "name": "Surface Water Currents w/Water Temperature",
+              "description": "Surface Water Currents w/Water Temperature",
+              "url": "https://nowcoast.noaa.gov/arcgis/rest/services/nowcoast/guidance_model_ocean_grtofs_time/MapServer",
+              "dataCustodian": "[nowcoast.noaa.gov](https://nowcoast.noaa.gov/arcgis/rest/services/nowcoast)",
+              "layers": "7",
+              "id": "K1VzLq",
+              "shareKeys": [
+                "Root Group/Environment/Water & Ice/Surface Water Currents w/Water Temperature"
+              ]
+            },
+            {
+              "type": "esri-mapServer",
+              "name": "Surface Water Currents w/Salinity",
+              "description": "Surface Water Currents w/Salinity",
+              "url": "https://nowcoast.noaa.gov/arcgis/rest/services/nowcoast/guidance_model_ocean_grtofs_time/MapServer",
+              "dataCustodian": "[nowcoast.noaa.gov](https://nowcoast.noaa.gov/arcgis/rest/services/nowcoast)",
+              "layers": "11",
+              "id": "Q8CsWV",
+              "shareKeys": [
+                "Root Group/Environment/Water & Ice/Surface Water Currents w/Salinity"
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "Antarctic Ice Shelves",
+              "description": "Antarctic Ice Shelves",
+              "url": "https://geoserver.leylines.ch/geoserver/environment/wms",
+              "dataCustodian": "[www.leylines.ch](http://www.leylines.ch/index.html#contact)",
+              "layers": "antarctic_ice_shelves",
+              "parameters": {
+                "tiled": true
+              },
+              "id": "ZG7jLA",
+              "shareKeys": [
+                "Root Group/Environment/Water & Ice/Antarctic Ice Shelves"
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "Glaciated Areas",
+              "description": "Glaciated Areas",
+              "url": "https://geoserver.leylines.ch/geoserver/environment/wms",
+              "dataCustodian": "[www.leylines.ch](http://www.leylines.ch/index.html#contact)",
+              "layers": "glaciated_areas",
+              "parameters": {
+                "tiled": true
+              },
+              "id": "vJ7ZEF",
+              "shareKeys": [
+                "Root Group/Environment/Water & Ice/Glaciated Areas"
+              ]
+            }
+          ],
+          "shareKeys": [
+            "Root Group/Environment/Water & Ice"
+          ]
+        },
+        {
+          "id": "yFlZA5",
+          "type": "group",
+          "name": "Misc",
+          "members": [
+            {
+              "type": "wms",
+              "name": "Age of the Oceanic Lithosphere",
+              "url": "https://gis.ngdc.noaa.gov/arcgis/services/web_mercator/seafloor_age/MapServer/WMSServer",
+              "dataCustodian": "[maps.ngdc.noaa.gov](https://maps.ngdc.noaa.gov/)",
+              "layers": "Age of Oceanic Lithosphere - millions of years",
+              "parameters": {
+                "tiled": true
+              },
+              "id": "5D422L",
+              "shareKeys": [
+                "Root Group/Environment/Misc/Age of the Oceanic Lithosphere"
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "Plate Boundaries - UTIG",
+              "description": "Plate Boundaries - UTIG",
+              "url": "https://gis.ngdc.noaa.gov/arcgis/services/web_mercator/seafloor_age/MapServer/WMSServer",
+              "dataCustodian": "[maps.ngdc.noaa.gov](https://maps.ngdc.noaa.gov/)",
+              "layers": "Plate Boundaries - UTIG",
+              "parameters": {
+                "tiled": true
+              },
+              "id": "4qHFYB",
+              "shareKeys": [
+                "Root Group/Environment/Misc/Plate Boundaries - UTIG"
+              ]
+            },
+            {
+              "type": "kml",
+              "name": "Submarine Cable Map - Cables",
+              "description": "The Submarine Cable Map is a free and regularly updated resource from TeleGeography.",
+              "url": "geodata/leylines/submarinecablemap.com/fusion-cables.kml",
+              "dataCustodian": "https://www.submarinecablemap.com/",
+              "id": "VeFrC8",
+              "shareKeys": [
+                "Root Group/Environment/Misc/Submarine Cable Map - Cables"
+              ]
+            },
+            {
+              "type": "kml",
+              "name": "Submarine Cable Map - Landing Points",
+              "description": "The Submarine Cable Map is a free and regularly updated resource from TeleGeography.",
+              "url": "geodata/leylines/submarinecablemap.com/fusion-landing-points.kml",
+              "dataCustodian": "https://www.submarinecablemap.com/",
+              "id": "e4GLIg",
+              "shareKeys": [
+                "Root Group/Environment/Misc/Submarine Cable Map - Landing Points"
+              ]
+            }
+          ],
+          "shareKeys": [
+            "Root Group/Environment/Misc"
+          ]
+        }
+      ],
+      "description": "Environmental paramters such as magnetism, earthquakes, volcanos and geological maps.",
+      "shareKeys": [
+        "Root Group/Environment"
+      ]
+    },
+    {
+      "id": "qqTicf",
+      "type": "group",
+      "name": "Weather",
+      "members": [
+        {
+          "id": "SuaizE",
+          "type": "group",
+          "name": "Hurricanes, Cyclones, Storms",
+          "members": [
+            {
+              "type": "kml",
+              "name": "Storms",
+              "description": "Hurricane Model Plots",
+              "url": "https://apps.sfwmd.gov/sfwmd/common/images/weather/plots/storm_all.kml",
+              "dataCustodian": "https://www.sfwmd.gov",
+              "id": "kDRpjW",
+              "shareKeys": [
+                "Root Group/Weather/Hurricanes, Cyclones, Storms/Storms"
+              ]
+            },
+            {
+              "type": "esri-mapServer-group",
+              "name": "Atlantic Hurricane Forecast",
+              "description": "Atlantic Hurricane Forecast",
+              "url": "https://idpgis.ncep.noaa.gov/arcgis/rest/services/NWS_Forecasts_Guidance_Warnings/NHC_Atl_trop_cyclones/MapServer",
+              "dataCustodian": "[weather.gov](https://www.weather.gov/gis/WebServices)",
+              "id": "GTX4ML",
+              "shareKeys": [
+                "Root Group/Weather/Hurricanes, Cyclones, Storms/Atlantic Hurricane Forecast"
+              ]
+            },
+            {
+              "type": "esri-mapServer-group",
+              "name": "East Pacific Hurricane Forecast",
+              "description": "East Pacific Hurricane Forecast",
+              "url": "https://idpgis.ncep.noaa.gov/arcgis/rest/services/NWS_Forecasts_Guidance_Warnings/NHC_E_Pac_trop_cyclones/MapServer",
+              "dataCustodian": "[weather.gov](https://www.weather.gov/gis/WebServices)",
+              "id": "2p8tPP",
+              "shareKeys": [
+                "Root Group/Weather/Hurricanes, Cyclones, Storms/East Pacific Hurricane Forecast"
+              ]
+            }
+          ],
+          "shareKeys": [
+            "Root Group/Weather/Hurricanes, Cyclones, Storms"
+          ]
+        },
+        {
+          "id": "ukV6XA",
+          "type": "group",
+          "name": "Weather Satellite Imagery",
+          "members": [
+            {
+              "type": "esri-mapServer",
+              "name": "Global Shortwave Infrared Mosaic",
+              "description": "Global Shortwave Infrared Mosaic",
+              "url": "https://nowcoast.noaa.gov/arcgis/rest/services/nowcoast/sat_meteo_imagery_time/MapServer",
+              "dataCustodian": "[nowcoast.noaa.gov](https://nowcoast.noaa.gov/arcgis/rest/services/nowcoast)",
+              "layers": "27",
+              "id": "iHFs88",
+              "shareKeys": [
+                "Root Group/Weather/Weather Satellite Imagery/Global Shortwave Infrared Mosaic"
+              ]
+            },
+            {
+              "type": "esri-mapServer",
+              "name": "Global Longwave Infrared Mosaic",
+              "description": "Global Longwave Infrared Mosaic",
+              "url": "https://nowcoast.noaa.gov/arcgis/rest/services/nowcoast/sat_meteo_imagery_time/MapServer",
+              "dataCustodian": "[nowcoast.noaa.gov](https://nowcoast.noaa.gov/arcgis/rest/services/nowcoast)",
+              "layers": "23",
+              "id": "HquVAL",
+              "shareKeys": [
+                "Root Group/Weather/Weather Satellite Imagery/Global Longwave Infrared Mosaic"
+              ]
+            },
+            {
+              "type": "esri-mapServer",
+              "name": "Global Visible Imagery Mosaic",
+              "description": "Global Visible Imagery Mosaic",
+              "url": "https://nowcoast.noaa.gov/arcgis/rest/services/nowcoast/sat_meteo_imagery_time/MapServer",
+              "dataCustodian": "[nowcoast.noaa.gov](https://nowcoast.noaa.gov/arcgis/rest/services/nowcoast)",
+              "layers": "19",
+              "id": "BIKAWm",
+              "shareKeys": [
+                "Root Group/Weather/Weather Satellite Imagery/Global Visible Imagery Mosaic"
+              ]
+            }
+          ],
+          "shareKeys": [
+            "Root Group/Weather/Weather Satellite Imagery"
+          ]
+        },
+        {
+          "id": "yPfDNv",
+          "type": "group",
+          "name": "Open Weathermap",
+          "members": [],
+          "shareKeys": [
+            "Root Group/Weather/Open Weathermap"
+          ]
+        }
+      ],
+      "description": "Current Weather from openweathermap.org",
+      "shareKeys": [
+        "Root Group/Weather"
+      ]
+    },
+    {
+      "id": "l1aFKt",
+      "type": "group",
+      "name": "EclipseTracks",
+      "members": [
+        {
+          "id": "4D3YQv",
+          "type": "group",
+          "name": "2020 - 2029",
+          "members": [],
+          "description": "Eclipses 2020 - 2029",
+          "shareKeys": [
+            "Root Group/EclipseTracks/2020 - 2029"
+          ]
+        }
+      ],
+      "description": "Interactive Solar Eclipses from EclipseTracks.org<br/>Source Code: <a href='https://github.com/Frencil/eclipsetracks'>https://github.com/Frencil/eclipsetracks</a><br/>Umbral shadows are approximations only! <a href='http://squiggle.city/~frencil/archives/20150317.html'>Details here</a>",
+      "shareKeys": [
+        "Root Group/EclipseTracks"
+      ]
+    },
+    {
+      "id": "QfCWb3",
+      "type": "group",
+      "name": "Ancient Maps",
+      "members": [
+        {
+          "type": "wms",
+          "name": "Piri-Reis",
+          "url": "https://geoserver.leylines.ch/ancient/wms",
+          "dataCustodian": "[www.leylines.ch](http://www.leylines.ch/index.html#contact)",
+          "layers": "piri_reis_world_map_1513",
+          "parameters": {
+            "tiled": true
+          },
+          "id": "NuyWji",
+          "shareKeys": [
+            "Root Group/Ancient Maps/Piri-Reis"
+          ]
+        },
+        {
+          "type": "wms",
+          "name": "Weltenstein Klaus Dona",
+          "description": "Weltenstein Klaus Dona geo-referenced as good as possible",
+          "url": "https://geoserver.leylines.ch/geoserver/ancientMaps/wms",
+          "dataCustodian": "Klaus Dona",
+          "layers": "weltenstein",
+          "parameters": {
+            "tiled": true
+          },
+          "id": "WSx7SU",
+          "shareKeys": [
+            "Root Group/Ancient Maps/Weltenstein Klaus Dona"
+          ]
+        },
+        {
+          "type": "wms",
+          "name": "Silk Route",
+          "description": "Silk Route",
+          "url": "https://geoserver.leylines.ch/geoserver/ancientMaps/wms",
+          "dataCustodian": "[www.leylines.ch](http://www.leylines.ch/index.html#contact)",
+          "layers": "trade_routes",
+          "parameters": {
+            "tiled": true
+          },
+          "id": "K75bhh",
+          "shareKeys": [
+            "Root Group/Ancient Maps/Silk Route"
+          ]
+        }
+      ],
+      "description": "Ancient Maps, geo-referenced as good as possible.",
+      "shareKeys": [
+        "Root Group/Ancient Maps"
+      ]
+    },
+    {
+      "id": "2tigsE",
+      "type": "group",
+      "name": "Anomalies",
+      "members": [
+        {
+          "id": "d1Cq1q",
+          "type": "group",
+          "name": "Earth Magnetic Field",
+          "members": [
+            {
+              "type": "wms",
+              "name": "Earth Magnetic Anomaly Grid",
+              "description": "EMAG2: Earth Magnetic Anomaly Grid (2-arc-minute resolution) Magnetic anomaly maps provide insight into the subsurface structure and composition of the Earth's crust. Anomalies trending parallel to the isochrons (lines of equal age) in the oceans reveal ...",
+              "url": "https://gis.ngdc.noaa.gov/arcgis/services/EMAG2v3/MapServer/WMSServer?request=GetCapabilities&service=WMS",
+              "opacity": 1,
+              "disablePreview": true,
+              "dataCustodian": "[maps.ngdc.noaa.gov](https://maps.ngdc.noaa.gov/)",
+              "layers": "3",
+              "parameters": {
+                "tiled": true
+              },
+              "legends": [
+                {
+                  "url": "https://www.ngdc.noaa.gov/geomag/data/EMAG2/EMAG2_scale.png"
+                }
+              ],
+              "id": "SP3x65",
+              "shareKeys": [
+                "Root Group/Anomalies/Earth Magnetic Field/Earth Magnetic Anomaly Grid"
+              ]
+            }
+          ],
+          "description": "Earth's magnetic field (and the surface magnetic field) is approximately a magnetic dipole, with the magnetic field S pole near the Earth's geographic north pole and the other magnetic field N pole near the Earth's geographic south pole.",
+          "shareKeys": [
+            "Root Group/Anomalies/Earth Magnetic Field"
+          ]
+        },
+        {
+          "id": "hjrJRt",
+          "type": "group",
+          "name": "Mysterious Triangles",
+          "members": [],
+          "description": "Mysterious Triangles",
+          "shareKeys": [
+            "Root Group/Anomalies/Mysterious Triangles"
+          ]
+        },
+        {
+          "id": "aiFE5D",
+          "type": "group",
+          "name": "Gravity",
+          "members": [
+            {
+              "type": "wms",
+              "name": "Isostatic Gravity Anomaly",
+              "description": "Isostatic Gravity Anomaly from http://bgi.omp.obs-mip.fr/data-products/Grids-and-models/wgm2012",
+              "url": "https://geoserver.leylines.ch/WGM2012/wms",
+              "opacity": 1,
+              "dataCustodian": "[www.leylines.ch](http://www.leylines.ch/index.html#contact)",
+              "layers": "WGM2012_Isostatic_ponc_2min",
+              "parameters": {
+                "tiled": true
+              },
+              "id": "PXfcrG",
+              "shareKeys": [
+                "Root Group/Anomalies/Gravity/Isostatic Gravity Anomaly"
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "Freeair Gravity Anomaly",
+              "description": "Freeair Gravity Anomaly from http://bgi.omp.obs-mip.fr/data-products/Grids-and-models/wgm2012",
+              "url": "https://geoserver.leylines.ch/WGM2012/wms",
+              "opacity": 1,
+              "dataCustodian": "[www.leylines.ch](http://www.leylines.ch/index.html#contact)",
+              "layers": "WGM2012_Freeair_ponc_2min",
+              "parameters": {
+                "tiled": true
+              },
+              "id": "dB36N8",
+              "shareKeys": [
+                "Root Group/Anomalies/Gravity/Freeair Gravity Anomaly"
+              ]
+            },
+            {
+              "type": "wms",
+              "name": "Bouguer Gravity Anomaly",
+              "description": "Bouguer Gravity Anomaly from http://bgi.omp.obs-mip.fr/data-products/Grids-and-models/wgm2012",
+              "url": "https://geoserver.leylines.ch/WGM2012/wms",
+              "opacity": 1,
+              "dataCustodian": "[www.leylines.ch](http://www.leylines.ch/index.html#contact)",
+              "layers": "WGM2012_Bouguer_ponc_2min",
+              "parameters": {
+                "tiled": true
+              },
+              "id": "1CKHfe",
+              "shareKeys": [
+                "Root Group/Anomalies/Gravity/Bouguer Gravity Anomaly"
+              ]
+            }
+          ],
+          "shareKeys": [
+            "Root Group/Anomalies/Gravity"
+          ]
+        },
+        {
+          "type": "wms",
+          "name": "South Atlantic Anomaly",
+          "description": "South Atlantic Anomaly",
+          "url": "https://geoserver.leylines.ch/anomalies/wms",
+          "dataCustodian": "[www.leylines.ch](http://www.leylines.ch/index.html#contact)",
+          "layers": "sama",
+          "parameters": {
+            "tiled": true
+          },
+          "id": "1bPnm8",
+          "shareKeys": [
+            "Root Group/Anomalies/South Atlantic Anomaly"
+          ]
+        }
+      ],
+      "shareKeys": [
+        "Root Group/Anomalies"
+      ]
+    },
+    {
+      "id": "NvdTcD",
+      "type": "group",
+      "name": "Astrogeology",
+      "members": [
+        {
+          "id": "ewK4Bf",
+          "type": "group",
+          "name": "Earth - Moon",
+          "members": [
+            {
+              "type": "esri-mapServer",
+              "name": "LOLA Colorized Elevation Map",
+              "url": "https://webgis2.wr.usgs.gov/arcgis/rest/services/Lunar_LOLA_Basemap/MapServer",
+              "opacity": 1,
+              "dataCustodian": "[usgs.gov](https://www.arcgis.com/home/item.html?id=d48bfde4fe9d46b4af114ebe8375d6f4)",
+              "layers": "0",
+              "id": "PPhK8F",
+              "shareKeys": [
+                "Root Group/Astrogeology/Earth - Moon/LOLA Colorized Elevation Map"
+              ]
+            }
+          ],
+          "shareKeys": [
+            "Root Group/Astrogeology/Earth - Moon"
+          ]
+        },
+        {
+          "id": "aWXVpu",
+          "type": "group",
+          "name": "Mars",
+          "members": [],
+          "shareKeys": [
+            "Root Group/Astrogeology/Mars"
+          ]
+        },
+        {
+          "id": "yl45QH",
+          "type": "group",
+          "name": "Venus",
+          "members": [],
+          "shareKeys": [
+            "Root Group/Astrogeology/Venus"
+          ]
+        },
+        {
+          "id": "dZ1tvW",
+          "type": "group",
+          "name": "Neptune",
+          "members": [],
+          "shareKeys": [
+            "Root Group/Astrogeology/Neptune"
+          ]
+        },
+        {
+          "id": "iLB4YN",
+          "type": "group",
+          "name": "Pluto",
+          "members": [],
+          "shareKeys": [
+            "Root Group/Astrogeology/Pluto"
+          ]
+        },
+        {
+          "id": "3NjtbH",
+          "type": "group",
+          "name": "Uranus",
+          "members": [],
+          "shareKeys": [
+            "Root Group/Astrogeology/Uranus"
+          ]
+        },
+        {
+          "id": "tC4Fic",
+          "type": "group",
+          "name": "Mercury",
+          "members": [],
+          "shareKeys": [
+            "Root Group/Astrogeology/Mercury"
+          ]
+        },
+        {
+          "id": "dnFtC3",
+          "type": "group",
+          "name": "Jupiter",
+          "members": [],
+          "shareKeys": [
+            "Root Group/Astrogeology/Jupiter"
+          ]
+        },
+        {
+          "id": "Zk3BVg",
+          "type": "group",
+          "name": "Saturn",
+          "members": [],
+          "shareKeys": [
+            "Root Group/Astrogeology/Saturn"
+          ]
+        }
+      ],
+      "shareKeys": [
+        "Root Group/Astrogeology"
+      ]
+    },
+    {
+      "id": "1tkcMI",
+      "type": "group",
+      "name": "3D-Buildings",
+      "members": [],
+      "description": "3D-Buildings",
+      "shareKeys": [
+        "Root Group/3D-Buildings"
+      ]
+    },
+    {
+      "id": "WBB16X",
+      "type": "group",
+      "name": "Forbidden History",
+      "members": [
+        {
+          "id": "ENAUVw",
+          "type": "group",
+          "name": "Knowledge",
+          "members": [],
+          "description": "Pathes of ancient knowledge",
+          "shareKeys": [
+            "Root Group/Forbidden History/Knowledge"
+          ]
+        }
+      ],
+      "description": "Historical facts not found in history-books.",
+      "shareKeys": [
+        "Root Group/Forbidden History"
+      ]
+    },
+    {
+      "id": "xxVvFS",
+      "type": "group",
+      "name": "Related, Donators, Sponsors",
+      "members": [],
+      "description": "People, Websites and Companies supporting me in a way",
+      "shareKeys": [
+        "Root Group/Related, Donators, Sponsors"
+      ]
+    },
+    {
+      "id": "ikcENN",
+      "type": "group",
+      "name": "Data Providers",
+      "members": [
+        {
+          "type": "wms-group",
+          "name": "Gebco",
+          "description": "General Bathymetric Chart of the Oceans WMS-Service",
+          "url": "https://www.gebco.net/data_and_products/gebco_web_services/web_map_service/mapserv?request=getCapabilities&service=wms&version=1.3.0",
+          "dataCustodian": "[Gebco](https://www.gebco.net)",
+          "id": "AlvpKf",
+          "shareKeys": [
+            "Root Group/Data Providers/Gebco"
+          ]
+        },
+        {
+          "type": "wms-group",
+          "name": "Gebco 2019",
+          "description": "General Bathymetric Chart of the Oceans WMS-Service",
+          "url": "https://www.gebco.net/data_and_products/gebco_web_services/2019/mapserv?request=getcapabilities&service=wms&version=1.3.0",
+          "dataCustodian": "[Gebco](https://www.gebco.net)",
+          "id": "QE8VDF",
+          "shareKeys": [
+            "Root Group/Data Providers/Gebco 2019"
+          ]
+        },
+        {
+          "type": "wms-group",
+          "name": "ISRIC",
+          "description": "Soil Geographic Databases ",
+          "url": "https://data.isric.org/geoserver/sg250m/wms",
+          "dataCustodian": "[ISRIC](https://soilgrids.org/)",
+          "id": "lSM464",
+          "shareKeys": [
+            "Root Group/Data Providers/ISRIC"
+          ]
+        },
+        {
+          "type": "wms-group",
+          "name": "EOX.at",
+          "description": "EOX.at WMS-Service",
+          "url": "https://tiles.maps.eox.at/wms",
+          "dataCustodian": "[EOX.at](https://eox.at)",
+          "id": "t88utB",
+          "shareKeys": [
+            "Root Group/Data Providers/EOX.at"
+          ]
+        },
+        {
+          "type": "wms-group",
+          "name": "NASA Earthdata",
+          "description": "NASA Earthdata WMS-Service",
+          "url": "https://gibs.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi?SERVICE=WMS&REQUEST=GetCapabilities&VERSION=1.3.0",
+          "dataCustodian": "[NASA Earthdata](https://earthdata.nasa.gov/)",
+          "id": "CVBZTl",
+          "shareKeys": [
+            "Root Group/Data Providers/NASA Earthdata"
+          ]
+        },
+        {
+          "type": "wms-group",
+          "name": "NASA Socioeconomic Data",
+          "description": "NASA Socioeconomic Data WMS-Service",
+          "url": "https://sedac.ciesin.columbia.edu/geoserver/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+          "dataCustodian": "[NASA Socioeconomic Data](https://sedac.ciesin.columbia.edu/)",
+          "id": "MrUUM1",
+          "shareKeys": [
+            "Root Group/Data Providers/NASA Socioeconomic Data"
+          ]
+        },
+        {
+          "type": "wms-group",
+          "name": "Swisstopo",
+          "description": "Swisstopo WMS-Service",
+          "url": "https://wms.geo.admin.ch/?REQUEST=GetCapabilities&SERVICE=WMS&VERSION=1.3.0&lang=de",
+          "dataCustodian": "[geo.admin.ch](https://www.geo.admin.ch/)",
+          "id": "DjuWPZ",
+          "shareKeys": [
+            "Root Group/Data Providers/Swisstopo"
+          ]
+        }
+      ],
+      "shareKeys": [
+        "Root Group/Data Providers"
+      ]
+    }
+  ],
+  "corsDomains": [
+    "localhost",
+    "127.0.0.1",
+    "78.46.232.43"
+  ],
+  "baseMaps": {
+    "items": [
+      {
+        "item": {
+          "id": "bing-aerial-with-labels",
+          "name": "Bing Maps Aerial with Labels",
+          "type": "ion-imagery",
+          "ionAssetId": 3,
+          "opacity": 1.0
+        },
+        "image": "/images/maps/bingAerialLabels.png",
+        "contrastColor": "#ffffff"
+      },
+      {
+        "item": {
+          "id": "bing-aerial",
+          "name": "Bing Maps Aerial",
+          "type": "ion-imagery",
+          "ionAssetId": 2,
+          "opacity": 1.0
+        },
+        "image": "/images/maps/bingAerial.png",
+        "contrastColor": "#ffffff"
+      },
+      {
+        "item": {
+          "id": "bing-road",
+          "name": "Bing Maps Roads",
+          "type": "ion-imagery",
+          "ionAssetId": 4,
+          "opacity": 1.0
+        },
+        "image": "/images/maps/bingRoads.png",
+        "contrastColor": "#ffffff"
+      },
+      {
+        "item": {
+          "id": "esri-world-imagery",
+          "name": "ESRI World Imagery",
+          "type": "ion-imagery",
+          "ionAssetId": 2635,
+          "opacity": 1.0,
+          "attribution": "Sources: Esri, DigitalGlobe, GeoEye, i-cubed, USDA FSA, USGS, AEX, Getmapping, Aerogrid, IGN, IGP, swisstopo, and the GIS User Community"
+        },
+        "image": "/images/maps/esriWorldImagery.png"
+      },
+      {
+        "item": {
+          "id": "esri-world-topo-map",
+          "name": "ESRI World Topo Map",
+          "type": "ion-imagery",
+          "ionAssetId": 2636,
+          "opacity": 1.0,
+          "attribution": "Sources: Esri, DeLorme, HERE, TomTom, Intermap, increment P Corp., GEBCO, USGS, FAO, NPS, NRCAN, GeoBase, IGN, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), swisstopo, MapmyIndia, and the GIS User Community"
+        },
+        "image": "/images/maps/esriWorldTopoMap.png"
+      },
+      {
+        "item": {
+          "id": "esri-national-geographic-map",
+          "name": "National Geographic Map",
+          "type": "ion-imagery",
+          "ionAssetId": 2637,
+          "opacity": 1.0,
+          "attribution": "Sources: National Geographic, Esri, DeLorme, HERE, UNEP-WCMC, USGS, NASA, ESA, METI, NRCAN, GEBCO, NOAA, iPC"
+        },
+        "image": "/images/maps/esriNationalGeographic.png"
+      },
+      {
+        "item": {
+          "id": "ch-openstreetmap",
+          "name": "Open Street Map",
+          "url": "https://tile.osm.ch/switzerland",
+          "type": "open-street-map",
+          "opacity": 1.0
+        },
+        "image": "/images/maps/openStreetMap.png"
+      },
+      {
+        "item": {
+          "id": "opentopomap",
+          "name": "Open Topo Map",
+          "url": "https://a.tile.opentopomap.org",
+          "type": "open-street-map",
+          "opacity": 1.0
+        },
+        "image": "/images/maps/openStreetMap.png"
+      },
+      {
+        "item": {
+          "id": "stamen-toner",
+          "name": "Stamen Toner",
+          "url": "https://stamen-tiles.a.ssl.fastly.net/toner-lite/",
+          "type": "open-street-map",
+          "opacity": 1.0,
+          "attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, under <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a>. Data by <a href=\"http://openstreetmap.org\">OpenStreetMap</a>, under <a href=\"http://www.openstreetmap.org/copyright\">ODbL</a>."
+        },
+        "image": "/images/maps/stamenToner.png"
+      },
+      {
+        "item": {
+          "id": "stamen-terrain",
+          "name": "Stamen Terrain",
+          "url": "https://stamen-tiles.a.ssl.fastly.net/terrain/",
+          "type": "open-street-map",
+          "opacity": 1.0,
+          "attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, under <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a>. Data by <a href=\"http://openstreetmap.org\">OpenStreetMap</a>, under <a href=\"http://www.openstreetmap.org/copyright\">ODbL</a>."
+        },
+        "image": "/images/maps/stamenTerrain.png"
+      },
+      {
+        "item": {
+          "id": "gebco-latest",
+          "name": "Stamen Terrain",
+          "url": "https://www.gebco.net/data_and_products/gebco_web_services/web_map_service/mapserv",
+          "type": "wms",
+          "layers": "GEBCO_LATEST_2_sub_ice_topo",
+          "opacity": 1.0
+        },
+        "image": "/images/maps/gebco.png"
+      },
+      {
+        "item": {
+          "id": "mapbox-satellite",
+          "name": "Mapbox Satellite",
+          "url": "https://api.mapbox.com/v4/",
+          "type": "mapbox-map",
+          "mapId": "mapbox.satellite",
+          "accessToken": "pk.eyJ1IjoibGV5bGluZXMiLCJhIjoiY2o1ajh2ZDB4Mmd6aTJxcDhuYzIwdXB4ciJ9.ReIEsCklhxnotFEp4_OHrw",
+          "opacity": 1.0
+        },
+        "image": "/images/maps/mapbox.png"
+      },
+      {
+        "item": {
+          "id": "mapbox-streets",
+          "name": "Mapbox Streets",
+          "url": "https://api.mapbox.com/styles/v1/",
+          "type": "mapbox-style",
+          "styleId": "streets-v11",
+          "accessToken": "pk.eyJ1IjoibGV5bGluZXMiLCJhIjoiY2o1ajh2ZDB4Mmd6aTJxcDhuYzIwdXB4ciJ9.ReIEsCklhxnotFEp4_OHrw",
+          "opacity": 1.0
+        },
+        "image": "/images/maps/mapboxPirates.png"
+      },
+      {
+        "item": {
+          "id": "mapbox-outdoors",
+          "name": "Mapbox Outdoors",
+          "url": "https://api.mapbox.com/styles/v1/",
+          "type": "mapbox-style",
+          "styleId": "outdoors-v11",
+          "accessToken": "pk.eyJ1IjoibGV5bGluZXMiLCJhIjoiY2o1ajh2ZDB4Mmd6aTJxcDhuYzIwdXB4ciJ9.ReIEsCklhxnotFEp4_OHrw",
+          "opacity": 1.0
+        },
+        "image": "/images/maps/mapBoxOutdoors.png"
+      }
+    ]
+  },
+  "homeCamera": {
+    "west": -36.71552444513493,
+    "south": -18.354253038279378,
+    "east": 87.24156809826991,
+    "north": 32.973282519670335,
+    "position": {
+      "x": 19795144.193246543,
+      "y": 9342227.815832423,
+      "z": 4981185.575901657
+    },
+    "direction": {
+      "x": -0.8820849276300011,
+      "y": -0.41630881742183573,
+      "z": -0.22048389733676332
+    },
+    "up": {
+      "x": -0.19595085814381322,
+      "y": -0.10138065409631446,
+      "z": 0.9753590232154039
+    }
+  }
+}
