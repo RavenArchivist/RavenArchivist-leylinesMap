@@ -1,7 +1,7 @@
 'use strict';
 
 var terriaOptions = {
-    baseUrl: 'build/TerriaJS'
+    baseUrl: 'build/LeylinesJS'
 };
 
 import { runInAction } from "mobx";
