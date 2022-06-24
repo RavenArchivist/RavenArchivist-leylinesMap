@@ -37,6 +37,24 @@
         "georeferencer.com",
         "si.edu",
         "glims.org"
-    ]
+    ],
+
+    "feedback": {
+        "userAgent": "LeylinesBot (LeylinesJS Feedback)",
+        "issuesUrl": "https://api.github.com/repos/leylines/leylinesMap/issues",
+        "accessToken": "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"
+    },
+
+    "shareUrlPrefixes": {
+        "g": {
+            "service": "gist",
+            "accessToken": "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",
+
+            "userAgent": "leylinesMap",
+            "gistFilename":  "usercatalog.json",
+            "gistDescription": "User catalog"
+        }
+    },
+    "newShareUrlPrefix": "g"
 }
 
