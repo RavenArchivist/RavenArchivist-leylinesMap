@@ -69,6 +69,20 @@ gulp.task('build-app', gulp.parallel('render-index', gulp.series('check-terriajs
     runWebpack(webpack, webpackConfig, done);
 })));
 
+gulp.task('link-config', function (done) {
+    const { src, symlink } = require('gulp');
+    src('../leylines-config/devserverconfig.json')
+      .pipe(symlink('.', { dirMode: false, overwrite: true }));
+    src('../leylines-config/leylines.json')
+      .pipe(symlink('./wwwroot/init', { dirMode: false, overwrite: true }));
+    src('../leylines-config/config.json')
+      .pipe(symlink('./wwwroot', { dirMode: false, overwrite: true }));
+    src('../../geodata', { allowEmpty: true })
+      .pipe(symlink('./wwwroot', { overwrite: true }));
+    done();
+});
+
+
 gulp.task('release-app', gulp.parallel('render-index', gulp.series('check-terriajs-dependencies', 'write-version', function releaseApp(done) {
     var runWebpack = require('leylinesjs/buildprocess/runWebpack.js');
     var webpack = require('webpack');
@@ -353,7 +367,7 @@ function checkForDuplicateCesium() {
     }
 }
 
-gulp.task('build', gulp.series('render-datasource-templates', 'copy-terriajs-assets', 'build-app'));
-gulp.task('release', gulp.series('render-datasource-templates', 'copy-terriajs-assets', 'release-app', 'make-editor-schema'));
+gulp.task('build', gulp.series('render-datasource-templates', 'copy-terriajs-assets', 'link-config', 'build-app'));
+gulp.task('release', gulp.series('render-datasource-templates', 'copy-terriajs-assets', 'link-config', 'release-app', 'make-editor-schema'));
 gulp.task('watch', gulp.parallel('watch-datasource-templates', 'watch-terriajs-assets', 'watch-app'));
 gulp.task('default', gulp.series('lint', 'build'));
