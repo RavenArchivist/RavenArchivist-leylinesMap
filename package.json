@@ -5,8 +5,8 @@
       "packages/leylinesjs",
       "packages/cesium",
       "packages/leylinesjs-server",
-      "packages/plugin-api",
-      "packages/plugin-sample"
+      "packages/leylinesjs-plugin-api",
+      "packages/leylinesjs-plugin-sample"
     ],
     "nohoist": [
       "**/husky"
@@ -24,10 +24,10 @@
     "url": "https://github.com/leylines/leylinesMap"
   },
   "dependencies": {
-    "leylinesjs-plugin-api": "https://github.com/leylines/leylinesjs-plugin-api",
-    "leylinesjs-plugin-sample": "https://github.com/leylines/leylinesjs-plugin-sample",
+    "pm2": "^3.2.2",
     "leylinesjs-server": "https://github.com/leylines/leylinesjs-server#main",
-    "pm2": "^3.2.2"
+    "leylinesjs-plugin-api": "https://github.com/leylines/leylinesjs-plugin-api",
+    "leylinesjs-plugin-sample": "https://github.com/leylines/leylinesjs-plugin-sample"
   },
   "config": {
     "awsProfile": "terria",

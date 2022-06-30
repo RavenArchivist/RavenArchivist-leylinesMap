@@ -5,7 +5,7 @@ import { TerriaPluginModule } from "leylines-plugin-api";
 */
 const plugins: () => Promise<TerriaPluginModule>[] = () => [
   // Add plugin imports. Example:
-  // import("terriajs-plugin-sample")
+  // import("terriajs-plugin-sample"),
 ];
 
 export default plugins;
