@@ -154,7 +154,7 @@ gulp.task(
 gulp.task("copy-terriajs-assets", function () {
   var terriaWebRoot = path.join(getPackageRoot("leylinesjs"), "wwwroot");
   var sourceGlob = path.join(terriaWebRoot, "**");
-  var destPath = path.resolve(__dirname, "wwwroot", "build", "TerriaJS");
+  var destPath = path.resolve(__dirname, "wwwroot", "build", "LeylinesJS");
 
   return gulp
     .src([sourceGlob], { base: terriaWebRoot })
