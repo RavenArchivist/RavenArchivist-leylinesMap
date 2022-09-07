@@ -24,8 +24,8 @@ import BingMapsSearchProviderViewModel from "leylinesjs/lib/Models/SearchProvide
 import render from "./lib/Views/render";
 import registerCatalogMembers from "leylinesjs/lib/Models/Catalog/registerCatalogMembers";
 import defined from "terriajs-cesium/Source/Core/defined";
-import loadPlugins from "./lib/Core/loadPlugins";
-import plugins from "./plugins";
+//import loadPlugins from "./lib/Core/loadPlugins";
+//import plugins from "./plugins";
 
 // Register all types of catalog members in the core TerriaJS.  If you only want to register a subset of them
 // (i.e. to reduce the size of your application if you don't actually use them all), feel free to copy a subset of
@@ -74,17 +74,17 @@ module.exports = terria
     beforeRestoreAppState: () => {
       // Load plugins before restoring app state because app state may
       // reference plugin components and catalog items.
-      return loadPlugins(viewState, plugins).catch(error => {
-        console.error(`Error loading plugins`);
-        console.error(error);
-      });
+      //return loadPlugins(viewState, plugins).catch(error => {
+      //  console.error(`Error loading plugins`);
+      //  console.error(error);
+      //});
     }
   })
-  .catch(function(e) {
+  .catch(function (e) {
     terria.raiseErrorToUser(e);
   })
-  .finally(function() {
-    terria.loadInitSources().then(result => result.raiseError(terria));
+  .finally(function () {
+    terria.loadInitSources().then((result) => result.raiseError(terria));
 
     try {
       viewState.searchState.locationSearchProviders = [
@@ -129,7 +129,7 @@ module.exports = terria
             confirmText: globalDisclaimer.buttonTitle || "Ok",
             denyText: globalDisclaimer.denyText || "Cancel",
             denyAction: globalDisclaimer.afterDenyLocation
-              ? function() {
+              ? function () {
                   window.location = globalDisclaimer.afterDenyLocation;
                 }
               : undefined,
