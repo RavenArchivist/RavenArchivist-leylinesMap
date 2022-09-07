@@ -1,8 +1,10 @@
 node_modules/
 .idea/
 wwwroot/build/
+wwwroot/init/
 wwwroot/doc/
 wwwroot/index.html
+wwwroot/config.json
 npm-debug.log
 version.js
 wwwroot/init/nm.json
@@ -12,7 +14,7 @@ datasources/00_National_Data_Sets.json
 .sass-cache
 /terriajs.pid
 /terriajs-server.log
-
+devserverconfig.json
 /wwwroot/editor/
 /error.log
 /error.log
