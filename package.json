@@ -24,10 +24,11 @@
     "url": "https://github.com/leylines/leylinesMap"
   },
   "dependencies": {
-    "pm2": "^3.2.2",
+    "@types/react": "^17.0.3",
     "leylinesjs-plugin-api": "https://github.com/leylines/leylinesjs-plugin-api",
     "leylinesjs-plugin-sample": "https://github.com/leylines/leylinesjs-plugin-sample",
-    "leylinesjs-server": "https://github.com/leylines/leylinesjs-server#main"
+    "leylinesjs-server": "https://github.com/leylines/leylinesjs-server#main",
+    "pm2": "^3.2.2"
   },
   "config": {
     "awsProfile": "terria",
