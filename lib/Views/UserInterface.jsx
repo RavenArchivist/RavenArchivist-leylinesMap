@@ -1,16 +1,13 @@
-import {
-  MenuLeft,
-  Nav,
-  ExperimentalMenu
-} from "leylinesjs/lib/ReactViews/StandardUserInterface/customizable/Groups";
-import MenuItem from "leylinesjs/lib/ReactViews/StandardUserInterface/customizable/MenuItem";
 import PropTypes from "prop-types";
 import React from "react";
-import RelatedMaps from "./RelatedMaps";
-import SplitPoint from "leylinesjs/lib/ReactViews/SplitPoint";
+import RelatedMaps from "leylinesjs/lib/ReactViews/RelatedMaps/RelatedMaps";
+import {
+  ExperimentalMenu,
+  MenuLeft
+} from "leylinesjs/lib/ReactViews/StandardUserInterface/customizable/Groups";
+import MenuItem from "leylinesjs/lib/ReactViews/StandardUserInterface/customizable/MenuItem";
 import StandardUserInterface from "leylinesjs/lib/ReactViews/StandardUserInterface/StandardUserInterface";
 import version from "../../version";
-
 import "./global.scss";
 
 // function loadAugmentedVirtuality(callback) {
@@ -29,6 +26,8 @@ import "./global.scss";
 // }
 
 export default function UserInterface(props) {
+  const relatedMaps = props.viewState.terria.configParameters.relatedMaps;
+
   return (
     <StandardUserInterface {...props} version={version}>
       <MenuLeft>
@@ -37,7 +36,9 @@ export default function UserInterface(props) {
           href="https://www.leylines.net"
           key="about-link"
         />
-        <RelatedMaps viewState={props.viewState} />
+        {relatedMaps && relatedMaps.length > 0 ? (
+          <RelatedMaps relatedMaps={relatedMaps} />
+        ) : null}
       </MenuLeft>
       <ExperimentalMenu>
         {/* <If condition={isBrowserSupportedAV()}>
