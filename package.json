@@ -28,7 +28,7 @@
     "leylinesjs-plugin-api": "https://github.com/leylines/leylinesjs-plugin-api",
     "leylinesjs-plugin-sample": "https://github.com/leylines/leylinesjs-plugin-sample",
     "leylinesjs-server": "https://github.com/leylines/leylinesjs-server#main",
-    "pm2": "^3.2.2"
+    "pm2": "^5.2.0"
   },
   "config": {
     "awsProfile": "terria",
