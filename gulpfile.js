@@ -281,7 +281,13 @@ function checkForDuplicateCesium() {
   }
 }
 
-gulp.task("build", gulp.series("copy-terriajs-assets", "build-app"));
-gulp.task("release", gulp.series("copy-terriajs-assets", "release-app"));
+gulp.task(
+  "build",
+  gulp.series("link-config", "copy-terriajs-assets", "build-app")
+);
+gulp.task(
+  "release",
+  gulp.series("link-config", "copy-terriajs-assets", "release-app")
+);
 gulp.task("watch", gulp.parallel("watch-terriajs-assets", "watch-app"));
 gulp.task("default", gulp.series("lint", "build"));

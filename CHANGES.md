@@ -2,9 +2,22 @@
 
 ### The Next Release
 
-**Breaking changes:**
+- [The next improvement]
+
+### `0.0.6`
+
+**2022-11-11**
+
+- About button href is now pulled from TerriaJS `configParameters.aboutButtonHrefUrl`
+- Update TerriaJS to `8.2.21`
+
+### `0.0.5`
+
+**2022-11-02**
 
 - TerriaMap no longer supports ejs templating for data sources. We suggest to use terria reference to manage a catalog in multiple files.
+- Update TerriaJS to `8.2.20`
+- Pin `"@types/lodash": "4.14.182"`(See https://github.com/DefinitelyTyped/DefinitelyTyped/discussions/63021)
 
 ### `0.0.4`
 

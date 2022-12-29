@@ -27,6 +27,8 @@ import "./global.scss";
 
 export default function UserInterface(props) {
   const relatedMaps = props.viewState.terria.configParameters.relatedMaps;
+  const aboutButtonHrefUrl =
+    props.viewState.terria.configParameters.aboutButtonHrefUrl;
 
   return (
     <StandardUserInterface {...props} version={version}>
