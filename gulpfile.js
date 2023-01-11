@@ -42,7 +42,7 @@ gulp.task("write-version", function (done) {
     nowDate.getMonth() + 1
   }-${nowDate.getDate()}`;
   const packageJson = require("./package.json");
-  const terriajsPackageJson = require("./node_modules/terriajs/package.json");
+  const terriajsPackageJson = require("./node_modules/leylinesjs/package.json");
 
   const isClean =
     spawnSync("git", ["status", "--porcelain"]).stdout.toString().length === 0;
