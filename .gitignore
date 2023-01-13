@@ -23,6 +23,7 @@ productionserverconfig.json
 /output.log
 privateserverconfig.json
 wwwroot/privateconfig.json
+wwwroot/leylines-geodata
 deploy/packages/
 deploy/work/
 packages/
