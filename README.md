@@ -1,24 +1,94 @@
-# Terria Map
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![Apache-2.0 License][license-shield]][license-url]
 
-[![Build Status](https://github.com/TerriaJS/TerriaMap/actions/workflows/ci.yml/badge.svg?branch=main&event=push)](https://github.com/TerriaJS/TerriaMap/actions/workflows/ci.yml) [![Docs](https://img.shields.io/badge/docs-online-blue.svg)](https://docs.terria.io/)
+[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/S6S51HNJ6)
 
-![Terria logo](terria-logo.png "Terria logo")
+<!-- Leylines LOGO -->
+<br />
+<p align="center">
+  <a href="https://www.leylines.net">
+    <img src="https://www.leylines.net/img/leylines-sign.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">Leylines-Documentation</h3>
+
+  <p align="center">
+    leylines.net documents, researches and archives ley lines and places of high energy and tries to find a global network interconnectng local ley lines to a big energynet.
+    <br />
+    <a href="https://docs.leylines.net"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://www.leylines.net">Homepage</a>
+    ·
+    <a href="https://maps.leylines.net">The Map</a>
+    ·
+    <a href="https://hub.leylines.net">The Hub</a>
+  </p>
+</p>
+
+<!-- TABLE OF CONTENTS -->
+
+## Table of Contents
+
+- [About](#about)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+<!-- ABOUT THE PROJECT -->
+
+## About
 
 This is a complete website built using the TerriaJS library. See the [TerriaJS README](https://github.com/TerriaJS/TerriaJS) for information about TerriaJS, and getting started using this repository.
 
-For instructions on how to deploy your map, see [the documentation here](doc/deploying/deploying-to-aws.md).
+<!-- ROADMAP -->
 
----
+## Roadmap
 
-### We just reformatted our codebase with [Prettier](https://prettier.io/) (2022-08-29)
+See the [open issues](https://github.com/leylines/leylinesMap/issues) for a list of proposed features (and known issues).
 
-This may cause large merge conflicts when you merge `main` into your fork. See https://github.com/TerriaJS/terriajs/discussions/6517 for instructions on how to merge this formatting change.
+<!-- CONTRIBUTING -->
 
-### We have released TerriaJS v8 (2021-08-13)
+## Contributing
 
-What this means:
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-- [Our new main branch of TerriaMap](https://github.com/TerriaJS/TerriaMap/tree/main) now uses v8+ of TerriaJS
-- [The terriajs7 branch of TerriaMap](https://github.com/TerriaJS/TerriaMap/tree/terriajs7) will use v7 TerriaJS, but will not receive further updates
-- We have a [migration guide](https://docs.terria.io/guide/contributing/migration-guide/) available for users of TerriaJS v7 to help them upgrade their applications to TerriaJS v8
-- Please chat to us and the community in our [GitHub discussions forum](https://github.com/TerriaJS/terriajs/discussions)
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+<!-- LICENSE -->
+
+## License
+
+Distributed under the Apache-2.0 License. See `LICENSE` for more information.
+
+<!-- CONTACT -->
+
+## Contact
+
+Joerg Roth - [@earthanddata](https://twitter.com/earthanddata) - info@leylines.net
+
+Project Link: [https://github.com/leylines/leylinesMap](https://github.com/leylines/leylinesMap)
+
+GitHub Discussions Forum: [https://github.com/leylines/leylinesMaps/discussions](https://github.com/leylines/leylinesMaps/discussions)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[contributors-shield]: https://img.shields.io/github/contributors/leylines/leylinesMap.svg?style=flat-square
+[contributors-url]: https://github.com/leylines/leylinesMap/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/leylines/leylinesMap.svg?style=flat-square
+[forks-url]: https://github.com/leylines/leylinesMap/network/members
+[stars-shield]: https://img.shields.io/github/stars/leylines/leylinesMap.svg?style=flat-square
+[stars-url]: https://github.com/leylines/leylinesMap/stargazers
+[issues-shield]: https://img.shields.io/github/issues/leylines/leylinesMap.svg?style=flat-square
+[issues-url]: https://github.com/leylines/leylinesMap/issues
+[license-shield]: https://img.shields.io/github/license/leylines/leylinesMap.svg?style=flat-square
+[license-url]: https://github.com/leylines/leylinesMap/blob/master/LICENSE.md
