@@ -4,20 +4,6 @@
 [![Issues][issues-shield]][issues-url]
 [![Apache-2.0 License][license-shield]][license-url]
 
-[![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/S6S51HNJ6)
-
-<p>Donations are very welcome. They will be used to maintain the map (server, domain, etc.). Please use <a href="https://www.paypal.com/donate/?business=3UVB97V782WJL&no_recurring=0&item_name=Maintenance+of+the+map&currency_code=CHF" target="_blank">this link</a> or the button below.</p>
-<div>
-  <form action="https://www.paypal.com/donate" method="post" target="_top">
-  <input type="hidden" name="business" value="3UVB97V782WJL" />
-  <input type="hidden" name="no_recurring" value="0" />
-  <input type="hidden" name="item_name" value="Maintenance of the map" />
-  <input type="hidden" name="currency_code" value="CHF" />
-  <input type="image" src="https://www.paypalobjects.com/en_US/CH/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-  <img alt="" border="0" src="https://www.paypal.com/en_CH/i/scr/pixel.gif" width="1" height="1" />
-  </form>
-</div>
-
 <!-- Leylines LOGO -->
 <br />
 <p align="center">
@@ -56,6 +42,12 @@
 ## About
 
 This is a complete website built using the TerriaJS library. See the [TerriaJS README](https://github.com/TerriaJS/TerriaJS) for information about TerriaJS, and getting started using this repository.
+
+<!-- ABOUT THE PROJECT -->
+
+## Donations
+
+<p>Donations are very welcome. They will be used to maintain the map (server, domain, etc.). Please use <a href="https://www.paypal.com/donate/?business=3UVB97V782WJL&no_recurring=0&item_name=Maintenance+of+the+map&currency_code=CHF" target="_blank">this link</a>.</p>
 
 <!-- ROADMAP -->
 
