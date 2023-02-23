@@ -81,7 +81,7 @@ Joerg Roth - [@earthanddata](https://twitter.com/earthanddata) - info@leylines.n
 
 Project Link: [https://github.com/leylines/leylinesMap](https://github.com/leylines/leylinesMap)
 
-GitHub Discussions Forum: [https://github.com/leylines/leylinesMaps/discussions](https://github.com/leylines/leylinesMaps/discussions)
+GitHub Discussions Forum: [https://github.com/leylines/leylinesMap/discussions](https://github.com/leylines/leylinesMap/discussions)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
