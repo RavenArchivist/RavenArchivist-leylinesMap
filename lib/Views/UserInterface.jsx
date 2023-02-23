@@ -33,11 +33,13 @@ export default function UserInterface(props) {
   return (
     <StandardUserInterface {...props} version={version}>
       <MenuLeft>
-        <MenuItem
-          caption="About"
-          href="https://www.leylines.net"
-          key="about-link"
-        />
+        {aboutButtonHrefUrl ? (
+          <MenuItem
+            caption="About"
+            href={aboutButtonHrefUrl}
+            key="about-link"
+          />
+        ) : null}
         {relatedMaps && relatedMaps.length > 0 ? (
           <RelatedMaps relatedMaps={relatedMaps} />
         ) : null}
