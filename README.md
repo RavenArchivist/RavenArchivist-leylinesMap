@@ -47,6 +47,8 @@ This is a complete website built using the TerriaJS library. See the [TerriaJS R
 
 ## Donations
 
+<<<<<<< HEAD
+
 <p>Donations are very welcome. They will be used to maintain the map (server, domain, etc.). Please use <a href="https://www.paypal.com/donate/?business=3UVB97V782WJL&no_recurring=0&item_name=Maintenance+of+the+map&currency_code=CHF" target="_blank">this link</a>.</p>
 
 <!-- ROADMAP -->
