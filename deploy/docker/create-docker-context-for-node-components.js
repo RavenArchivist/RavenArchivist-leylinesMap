@@ -103,7 +103,7 @@ if (argv.build) {
     }
   );
 
-  dockerProcess.on("close", code => {
+  dockerProcess.on("close", (code) => {
     fse.removeSync(dockerContextDir);
 
     if (code === 0 && argv.push) {
@@ -118,11 +118,11 @@ if (argv.build) {
     process.exit(code);
   });
 
-  tarProcess.on("close", code => {
+  tarProcess.on("close", (code) => {
     dockerProcess.stdin.end();
   });
 
-  tarProcess.stdout.on("data", data => {
+  tarProcess.stdout.on("data", (data) => {
     dockerProcess.stdin.write(data);
   });
 } else if (argv.output) {
@@ -142,7 +142,7 @@ if (argv.build) {
     }
   );
 
-  tarProcess.on("close", code => {
+  tarProcess.on("close", (code) => {
     fse.closeSync(outputTar);
     console.log(tarProcess.status);
     fse.removeSync(dockerContextDir);
@@ -217,12 +217,12 @@ function preparePackage(packageDir, destDir) {
     }
     dockerIncludes = dockerIncludesFromPackageJson
       .split(" ")
-      .filter(include => include.length > 0);
+      .filter((include) => include.length > 0);
   }
 
   dockerIncludes
-    .filter(include => include !== "Dockerfile") // Filter out the dockerfile because we'll manually copy over a modified version.
-    .forEach(function(include) {
+    .filter((include) => include !== "Dockerfile") // Filter out the dockerfile because we'll manually copy over a modified version.
+    .forEach(function (include) {
       const src = path.resolve(packageDir, include);
       const dest = path.resolve(destDir, include);
 
@@ -263,7 +263,7 @@ function preparePackage(packageDir, destDir) {
 
 function prepareNodeModules(packageDir, destDir, productionPackages) {
   const subPackages = fse.readdirSync(packageDir);
-  subPackages.forEach(function(subPackageName) {
+  subPackages.forEach(function (subPackageName) {
     const src = path.join(packageDir, subPackageName);
     const dest = path.join(destDir, subPackageName);
 
@@ -302,7 +302,7 @@ function getPackageList(dependencies, basePath, result) {
     return result;
   }
 
-  Object.keys(dependencies).forEach(function(dependencyName) {
+  Object.keys(dependencies).forEach(function (dependencyName) {
     const dependencyDetails = dependencies[dependencyName];
     if (dependencyDetails.extraneous) {
       return;

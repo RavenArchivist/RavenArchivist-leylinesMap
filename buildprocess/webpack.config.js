@@ -6,7 +6,7 @@ var configureWebpackForPlugins = require("./configureWebpackForPlugins");
 var MiniCssExtractPlugin = require("mini-css-extract-plugin");
 var path = require("path");
 
-module.exports = function(devMode, hot) {
+module.exports = function (devMode, hot) {
   var config = {
     mode: devMode ? "development" : "production",
     entry: "./entry.js",

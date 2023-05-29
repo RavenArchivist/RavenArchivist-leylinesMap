@@ -28,7 +28,7 @@ clientConfig:
       [
         "",
         '<a target="_blank" href="http://terria.io"><img src="images/terria_logo.png" height="52" title="Version: {{version}}" /></a>',
-        "",
+        ""
       ]
     supportEmail: "help@example.com"
     mobileDefaultViewerMode: "2d"

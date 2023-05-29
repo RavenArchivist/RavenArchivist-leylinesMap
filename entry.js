@@ -8,11 +8,11 @@ function loadMainScript() {
   return new Promise((resolve, reject) => {
     require.ensure(
       ["leylinesjs/lib/Core/prerequisites"],
-      function(require) {
+      function (require) {
         require("leylinesjs/lib/Core/prerequisites");
         require.ensure(
           ["./index"],
-          function(require) {
+          function (require) {
             resolve(require("./index"));
           },
           reject,
@@ -44,7 +44,7 @@ function createLoader() {
   loaderDiv.style.backgroundColor = "#383F4D";
   document.body.appendChild(loaderDiv);
 
-  polyfill(function() {
+  polyfill(function () {
     loadMainScript()
       .catch(() => {
         // Ignore errors and try to show the map anyway
