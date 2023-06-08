@@ -2,7 +2,7 @@
   "private": true,
   "workspaces": {
     "packages": [
-      "packages/leylinesjs",
+      "packages/terriajs",
       "packages/cesium",
       "packages/leylinesjs-server",
       "packages/leylinesjs-plugin-api",
@@ -58,7 +58,6 @@
     "gulp": "^4.0.0",
     "husky": "^8.0.3",
     "json5": "^2.1.0",
-    "leylinesjs": "https://github.com/leylines/leylinesjs#main",
     "minimist": "^1.2.8",
     "node-notifier": "^5.1.2",
     "node-sass": "^6.0.1",
@@ -75,6 +74,7 @@
     "semver": "^5.0.0",
     "style-loader": "^0.23.1",
     "svg-sprite-loader": "4.1.3",
+    "terriajs": "https://github.com/leylines/terriajs#main",
     "terriajs-cesium": "1.92.0-tile-error-provider-fix-2",
     "ts-loader": "^5.3.3",
     "typescript": "^4.9.5",

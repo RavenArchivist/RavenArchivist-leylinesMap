@@ -18,7 +18,7 @@ var watchOptions = {
 
 gulp.task("check-terriajs-dependencies", function (done) {
   var appPackageJson = require("./package.json");
-  var terriaPackageJson = require("leylinesjs/package.json");
+  var terriaPackageJson = require("terriajs/package.json");
 
   syncDependencies(appPackageJson.dependencies, terriaPackageJson, true);
   syncDependencies(appPackageJson.devDependencies, terriaPackageJson, true);
@@ -34,7 +34,7 @@ gulp.task("write-version", function (done) {
     nowDate.getMonth() + 1
   }-${nowDate.getDate()}`;
   const packageJson = require("./package.json");
-  const terriajsPackageJson = require("./node_modules/leylinesjs/package.json");
+  const terriajsPackageJson = require("./node_modules/terriajs/package.json");
 
   const isClean =
     spawnSync("git", ["status", "--porcelain"]).stdout.toString().length === 0;
@@ -111,7 +111,7 @@ gulp.task(
       "check-terriajs-dependencies",
       "write-version",
       function buildApp(done) {
-        var runWebpack = require("leylinesjs/buildprocess/runWebpack.js");
+        var runWebpack = require("terriajs/buildprocess/runWebpack.js");
         var webpack = require("webpack");
         var webpackConfig = require("./buildprocess/webpack.config.js")(true);
 
@@ -131,7 +131,7 @@ gulp.task(
       "check-terriajs-dependencies",
       "write-version",
       function releaseApp(done) {
-        var runWebpack = require("leylinesjs/buildprocess/runWebpack.js");
+        var runWebpack = require("terriajs/buildprocess/runWebpack.js");
         var webpack = require("webpack");
         var webpackConfig = require("./buildprocess/webpack.config.js")(false);
 
@@ -162,7 +162,7 @@ gulp.task(
     "watch-render-index",
     gulp.series("check-terriajs-dependencies", function watchApp(done) {
       var fs = require("fs");
-      var watchWebpack = require("leylinesjs/buildprocess/watchWebpack");
+      var watchWebpack = require("terriajs/buildprocess/watchWebpack");
       var webpack = require("webpack");
       var webpackConfig = require("./buildprocess/webpack.config.js")(
         true,
@@ -178,9 +178,9 @@ gulp.task(
 );
 
 gulp.task("copy-terriajs-assets", function () {
-  var terriaWebRoot = path.join(getPackageRoot("leylinesjs"), "wwwroot");
+  var terriaWebRoot = path.join(getPackageRoot("terriajs"), "wwwroot");
   var sourceGlob = path.join(terriaWebRoot, "**");
-  var destPath = path.resolve(__dirname, "wwwroot", "build", "LeylinesJS");
+  var destPath = path.resolve(__dirname, "wwwroot", "build", "TerriaJS");
 
   return gulp
     .src([sourceGlob], { base: terriaWebRoot })
@@ -190,7 +190,7 @@ gulp.task("copy-terriajs-assets", function () {
 gulp.task(
   "watch-terriajs-assets",
   gulp.series("copy-terriajs-assets", function waitForTerriaJsAssetChanges() {
-    var terriaWebRoot = path.join(getPackageRoot("leylinesjs"), "wwwroot");
+    var terriaWebRoot = path.join(getPackageRoot("terriajs"), "wwwroot");
     var sourceGlob = path.join(terriaWebRoot, "**");
 
     // gulp.watch as of gulp v4.0.0 doesn't work with backslashes (the task is never triggered).
@@ -204,11 +204,11 @@ gulp.task(
 );
 
 gulp.task("lint", function (done) {
-  var runExternalModule = require("leylinesjs/buildprocess/runExternalModule");
+  var runExternalModule = require("terriajs/buildprocess/runExternalModule");
 
   runExternalModule("eslint/bin/eslint.js", [
     "-c",
-    path.join(getPackageRoot("leylinesjs"), ".eslintrc"),
+    path.join(getPackageRoot("terriajs"), ".eslintrc"),
     "--ignore-pattern",
     "lib/ThirdParty",
     "--max-warnings",
@@ -234,7 +234,7 @@ gulp.task("clean", function (done) {
 
 gulp.task("sync-terriajs-dependencies", function (done) {
   var appPackageJson = require("./package.json");
-  var terriaPackageJson = require("leylinesjs/package.json");
+  var terriaPackageJson = require("terriajs/package.json");
 
   syncDependencies(appPackageJson.dependencies, terriaPackageJson);
   syncDependencies(appPackageJson.devDependencies, terriaPackageJson);
@@ -284,14 +284,14 @@ function checkForDuplicateCesium() {
 
   if (
     fse.existsSync("node_modules/terriajs-cesium") &&
-    fse.existsSync("node_modules/leylinesjs/node_modules/terriajs-cesium")
+    fse.existsSync("node_modules/terriajs/node_modules/terriajs-cesium")
   ) {
     console.log(
       "You have two copies of terriajs-cesium, one in this application's node_modules\n" +
-        "directory and the other in node_modules/leylinesjs/node_modules/terriajs-cesium.\n" +
+        "directory and the other in node_modules/terriajs/node_modules/terriajs-cesium.\n" +
         "This leads to strange problems, such as knockout observables not working.\n" +
         "Please verify that node_modules/terriajs-cesium is the correct version and\n" +
-        "  rm -rf node_modules/leylinesjs/node_modules/terriajs-cesium\n" +
+        "  rm -rf node_modules/terriajs/node_modules/terriajs-cesium\n" +
         "Also consider running:\n" +
         "  yarn gulp sync-terriajs-dependencies\n" +
         "to prevent this problem from recurring the next time you `npm install`."

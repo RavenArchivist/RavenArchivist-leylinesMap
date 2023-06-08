@@ -1,20 +1,20 @@
 import PropTypes from "prop-types";
 import React from "react";
-import RelatedMaps from "leylinesjs/lib/ReactViews/RelatedMaps/RelatedMaps";
+import RelatedMaps from "terriajs/lib/ReactViews/RelatedMaps/RelatedMaps";
 import {
   ExperimentalMenu,
   MenuLeft
-} from "leylinesjs/lib/ReactViews/StandardUserInterface/customizable/Groups";
-import MenuItem from "leylinesjs/lib/ReactViews/StandardUserInterface/customizable/MenuItem";
-import StandardUserInterface from "leylinesjs/lib/ReactViews/StandardUserInterface/StandardUserInterface";
+} from "terriajs/lib/ReactViews/StandardUserInterface/customizable/Groups";
+import MenuItem from "terriajs/lib/ReactViews/StandardUserInterface/customizable/MenuItem";
+import StandardUserInterface from "terriajs/lib/ReactViews/StandardUserInterface/StandardUserInterface";
 import version from "../../version";
 import "./global.scss";
 
 // function loadAugmentedVirtuality(callback) {
 //   require.ensure(
-//     "leylinesjs/lib/ReactViews/Map/Navigation/AugmentedVirtualityTool",
+//     "terriajs/lib/ReactViews/Map/Navigation/AugmentedVirtualityTool",
 //     () => {
-//       const AugmentedVirtualityTool = require("leylinesjs/lib/ReactViews/Map/Navigation/AugmentedVirtualityTool");
+//       const AugmentedVirtualityTool = require("terriajs/lib/ReactViews/Map/Navigation/AugmentedVirtualityTool");
 //       callback(AugmentedVirtualityTool);
 //     },
 //     "AugmentedVirtuality"

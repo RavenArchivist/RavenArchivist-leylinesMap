@@ -3,7 +3,7 @@ import {
   TerriaPluginModule,
   ViewState
 } from "leylinesjs-plugin-api";
-import TerriaError from "leylinesjs/lib/Core/TerriaError";
+import TerriaError from "terriajs/lib/Core/TerriaError";
 
 /**
  * Load plugin modules.

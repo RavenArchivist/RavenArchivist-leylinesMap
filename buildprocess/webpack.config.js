@@ -1,7 +1,7 @@
 "use strict";
 
 /*global require*/
-var configureWebpackForTerriaJS = require("leylinesjs/buildprocess/configureWebpack");
+var configureWebpackForTerriaJS = require("terriajs/buildprocess/configureWebpack");
 var configureWebpackForPlugins = require("./configureWebpackForPlugins");
 var MiniCssExtractPlugin = require("mini-css-extract-plugin");
 var path = require("path");
@@ -43,7 +43,7 @@ module.exports = function (devMode, hot) {
                 search:
                   "function _get\\(\\).*?return _get\\.apply\\(this, arguments\\).*",
                 replace:
-                  "var _get = require('leylinesjs/lib/Core/superGet').default;",
+                  "var _get = require('terriajs/lib/Core/superGet').default;",
                 flags: "g"
               }
             },
@@ -172,7 +172,7 @@ module.exports = function (devMode, hot) {
   );
   return configureWebpackForPlugins(
     configureWebpackForTerriaJS(
-      path.dirname(require.resolve("leylinesjs/package.json")),
+      path.dirname(require.resolve("terriajs/package.json")),
       config,
       devMode,
       hot,
