@@ -30,3 +30,4 @@ packages/
 pancake/
 yarn-error.log
 package-lock.json
+.nvmrc
