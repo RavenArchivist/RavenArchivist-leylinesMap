@@ -7682,7 +7682,7 @@ levn@^0.4.1:
 
 "leylines-solids@https://github.com/leylines/leylines-solids#main":
   version "0.1.0"
-  resolved "https://github.com/leylines/leylines-solids#0be4a12c1601e9743debb56d009dd3555cc118cc"
+  resolved "https://github.com/leylines/leylines-solids#7c5d04282bffb18f271e6ffb285fe26c507fea1a"
 
 "leylinesjs-plugin-api@https://github.com/leylines/leylinesjs-plugin-api":
   version "0.0.1-alpha.16"
