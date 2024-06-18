@@ -24,6 +24,7 @@ productionserverconfig.json
 privateserverconfig.json
 wwwroot/privateconfig.json
 wwwroot/leylines-geodata
+wwwroot/catalogs
 deploy/packages/
 deploy/work/
 packages/
