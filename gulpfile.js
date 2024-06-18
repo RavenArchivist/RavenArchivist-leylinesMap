@@ -82,6 +82,9 @@ gulp.task("link-config", function (done) {
   src("../leylines-config/config.json").pipe(
     symlink("./wwwroot", { dirMode: false, overwrite: true })
   );
+  src("../leylines-config/catalogs").pipe(
+    symlink("./wwwroot", { dirMode: false, overwrite: true })
+  );
   src("../leylines-geodata", { allowEmpty: true }).pipe(
     symlink("./wwwroot", { overwrite: true })
   );
