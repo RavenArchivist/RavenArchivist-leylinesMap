@@ -13,7 +13,7 @@
     ]
   },
   "name": "leylinesjs-map",
-  "version": "0.1.2",
+  "version": "0.2.1",
   "description": "Geospatial catalog explorer based on TerriaJS.",
   "license": "Apache-2.0",
   "engines": {
@@ -39,7 +39,8 @@
     "underscore": "^1.12.1",
     "@types/react": "^17.0.3",
     "@types/lodash": "4.14.182",
-    "@types/node": "^18.15.11"
+    "@types/node": "^18.15.11",
+    "@types/css-font-loading-module": "^0.0.13"
   },
   "devDependencies": {
     "@babel/core": "^7.23.5",
