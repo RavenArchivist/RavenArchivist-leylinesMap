@@ -1,3 +1,4 @@
+@use "sass:color";
 @import "~terriajs/lib/Sass/common/_variables.scss";
 
 // To customise the look of your map, uncomment and change values here and in lib/Views/global.scss
@@ -27,10 +28,7 @@ $dark-darker: hsl(0,30%,15%);
 */
 
 $color-primary: hsl(0, 0%, 64%);
-$color-secondary: darken(
-  $color-primary,
-  20%
-); // or: lighten($color-primary, 20%);
+$color-secondary: color.adjust($color-primary, $lightness: -20%);
 
 // These variables set background panel colors
 $dark: hsl(0, 0%, 10%);
@@ -38,8 +36,8 @@ $dark-with-overlay: hsl(0, 0%, 10%);
 $dark-lighter: hsl(0, 0%, 20%);
 
 // You might find it helpful to define these and use them.
-$color-primary-light: lighten($color-primary, 10%);
-$color-primary-dark: darken($color-primary, 10%);
+$color-primary-light: color.adjust($color-primary, $lightness: 10%);
+$color-primary-dark: color.adjust($color-primary, $lightness: -10%);
 $dark-darker: hsl(0, 0%, 0%);
 
 $focus-border-light-color: $text-light;
