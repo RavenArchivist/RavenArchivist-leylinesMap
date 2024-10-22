@@ -9,7 +9,7 @@ const fs = require("fs");
  * "terriajs-plugin-sample", "terriajs-sample-plugin" as well as
  * "terriajs-some-plugin-for-something".
  */
-const PluginPackagePattern = /^leylinesjs-.*plugin/;
+const PluginPackagePattern = /^terriajs-.*plugin/;
 
 function configureWebpackForPlugins(config) {
   config.module.rules.push(createPluginIconsRule());
@@ -51,7 +51,7 @@ function createPluginIconsRule() {
       esModule: false,
       symbolId: (svgPath) => {
         // Generate a symbolId by concatenating the package name and the icon name
-        const packageName = packageNames[svgPath] || "leylinesjs-plugin-";
+        const packageName = packageNames[svgPath] || "terriajs-plugin-";
         const iconName = path.basename(svgPath, ".svg");
         const symbolId = `${packageName}-${iconName}`;
         return symbolId;

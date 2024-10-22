@@ -5,8 +5,8 @@
       "packages/terriajs",
       "packages/cesium",
       "packages/leylinesjs-server",
-      "packages/leylinesjs-plugin-api",
-      "packages/leylinesjs-plugin-sample"
+      "packages/plugin-api",
+      "packages/plugin-sample"
     ],
     "nohoist": [
       "**/husky"
@@ -39,7 +39,6 @@
     "underscore": "^1.12.1",
     "@types/react": "^17.0.3",
     "@types/lodash": "4.14.182",
-    "@types/node": "^18.15.11",
     "@types/css-font-loading-module": "^0.0.13"
   },
   "devDependencies": {
@@ -65,8 +64,6 @@
     "husky": "^8.0.3",
     "is-subdir": "^1.2.0",
     "json5": "^2.1.0",
-    "leylinesjs-plugin-api": "https://github.com/leylines/leylinesjs-plugin-api",
-    "leylinesjs-plugin-sample": "https://github.com/leylines/leylinesjs-plugin-sample",
     "lodash": "^4.17.21",
     "minimist": "^1.2.8",
     "node-notifier": "^5.1.2",
@@ -87,6 +84,8 @@
     "svg-sprite-loader": "^6.0.11",
     "terriajs": "https://github.com/leylines/terriajs#main",
     "terriajs-cesium": "8.0.1",
+    "terriajs-plugin-api": "https://github.com/leylines/plugin-api",
+    "terriajs-plugin-sample": "https://github.com/leylines/plugin-sample",
     "ts-loader": "^5.3.3",
     "typescript": "~5.2.0",
     "urijs": "^1.18.12",
