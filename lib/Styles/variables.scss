@@ -28,6 +28,9 @@ $color-primary-dark:darken($color-primary,10%);
 $dark-darker: hsl(0,30%,15%);
 */
 
+//$font-base: 'Josefin Sans', sans-serif;
+//$font-pop: $font-base; // If you just want to use one font throughout, do this.
+
 $color-primary: hsl(0, 0%, 64%);
 $color-secondary: color.adjust($color-primary, $lightness: -20%);
 
