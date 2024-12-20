@@ -7301,7 +7301,7 @@ levn@^0.4.1:
 
 "leylinesjs-server@https://github.com/leylines/leylinesjs-server":
   version "4.0.1"
-  resolved "https://github.com/leylines/leylinesjs-server#f855fe82c7420acf551677a05d6da0f5c0af3420"
+  resolved "https://github.com/leylines/leylinesjs-server#f075439630481b919906788aef8a41862a8dfc7a"
   dependencies:
     base-x "^3.0.5"
     basic-auth "^2.0.1"
