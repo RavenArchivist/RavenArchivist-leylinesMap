@@ -32,3 +32,4 @@ pancake/
 yarn-error.log
 package-lock.json
 .nvmrc
+.tool-versions
