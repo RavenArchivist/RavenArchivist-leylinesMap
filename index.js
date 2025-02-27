@@ -8,10 +8,10 @@ import ViewState from "terriajs/lib/ReactViewModels/ViewState";
 import registerCustomComponentTypes from "terriajs/lib/ReactViews/Custom/registerCustomComponentTypes";
 import updateApplicationOnHashChange from "terriajs/lib/ViewModels/updateApplicationOnHashChange";
 import updateApplicationOnMessageFromParentWindow from "terriajs/lib/ViewModels/updateApplicationOnMessageFromParentWindow";
-import loadPlugins from "./lib/Core/loadPlugins";
+//import loadPlugins from "./lib/Core/loadPlugins";
 import render from "./lib/Views/render";
 import showGlobalDisclaimer from "./lib/Views/showGlobalDisclaimer";
-import plugins from "./plugins";
+//import plugins from "./plugins";
 
 const terriaOptions = {
   baseUrl: "build/TerriaJS"
