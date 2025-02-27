@@ -1,5 +1,5 @@
-@import "~terriajs-variables";
-@import "~terriajs/lib/Sass/global/global";
+@use "../Styles/variables.scss";
+@use "~terriajs/lib/Sass/global/global";
 
 body {
   margin: 0;
@@ -21,7 +21,7 @@ body {
   //@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wdth,wght@87.5,100..900&display=swap');
 
   html {
-    font-family: $font-base;
+    font-family: variables.$font-base;
   }
 
   // Logo area in top left
@@ -36,7 +36,7 @@ body {
     a:last-child {
       display: none;
 
-      @media screen and (min-width: $sm) {
+      @media screen and (min-width: variables.$sm) {
         display: inline;
       }
     }
@@ -49,29 +49,30 @@ body {
   }
   // Background of whole left panel
   .tjs-standard-user-interface__sidePanel {
-    background: $dark-darker;
+    //background: variables.$dark-darker;
+    background: black;
   }
   // Individual sections within the left panel
   .tjs-side-panel__workBench {
-    font-family: $font-base;
+    font-family: variables.$font-base;
     font-weight: 500;
     font-size: 18px;
-    background: $dark-darker;
+    background: variables.$dark-darker;
   }
 
   // All kinds of buttons in various screens
   .tjs-_buttons__btn {
     &-primary {
-      font-family: $font-base;
+      font-family: variables.$font-base;
     }
     &:hover {
-      color: $color-primary;
+      color: variables.$color-primary;
     }
   }
 
   // Buttons like "Share" within the map area.
   .tjs-_buttons__btn--map {
-    background: $dark;
+    background: variables.$dark;
     &:focus,
     &:hover {
       color: white;
@@ -81,45 +82,45 @@ body {
   // Lat/lon buttons
   .tjs-legend__locationBar,
   .tjs-legend__distanceLegend {
-    background: $dark;
+    background: variables.$dark;
     color: white;
     &:hover,
     &:focus {
-      background: $dark;
+      background: variables.$dark;
       color: white;
     }
   }
 
   // Progress bar while datasets are loading
   .tjs-progress-bar__progress-bar {
-    background: $color-primary;
+    background: variables.$color-primary;
   }
 
   // Flatten and simplify display of timeline controls
   .tjs-timeline-controls__timeline__control {
-    background: $dark-lighter;
+    background: variables.$dark-lighter;
     border: none;
   }
 
   .tjs-timeline__text-cell {
-    font-family: $font-base;
+    font-family: variables.$font-base;
   }
 
   .tjs-timeline__timeline {
-    background: $dark-lighter;
+    background: variables.$dark-lighter;
   }
 
   .cesium-timeline-bar {
-    background: $dark-with-overlay;
+    background: variables.$dark-with-overlay;
   }
 
   // Feature info table
   .tjs-feature-info-section__content {
     h1 {
-      color: $color-primary;
+      color: variables.$color-primary;
     }
     table th {
-      font-family: $font-base; // if you don't want monospaced
+      font-family: variables.$font-base; // if you don't want monospaced
       font-weight: 800; // not bold
       padding-bottom: 8px;
       padding-left: 4px;
@@ -129,7 +130,7 @@ body {
 
     table td {
       border: none;
-      font-family: $font-base; // if you don't want monospaced
+      font-family: variables.$font-base; // if you don't want monospaced
       font-weight: normal; // not bold
       color: hsl(0, 0%, 90%);
     }
@@ -147,29 +148,29 @@ body {
   // expandable catalog groups
   .tjs-data-catalog-group__btn--catalog {
     &:hover {
-      background: $color-secondary;
+      background: variables.$color-secondary;
       color: white;
     }
     &:focus {
-      background: $color-primary;
+      background: variables.$color-primary;
       color: white;
     }
   }
   // The currently selected item in the list
   .tjs-data-catalog-item__btn-catalog-item--is-previewed {
     &:focus {
-      color: $color-primary;
+      color: variables.$color-primary;
     }
   }
   // The tabs at the top
   .tjs-tabs__btn--tab {
-    font-family: $font-base;
+    font-family: variables.$font-base;
   }
 
   .tjs-tabs__btn--selected {
-    color: $color-primary-dark;
+    color: variables.$color-primary-dark;
   }
   .tjs-tabs__btn--tab:hover {
-    color: $color-secondary;
+    color: variables.$color-secondary;
   }
 }

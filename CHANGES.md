@@ -1,5 +1,18 @@
 # Change Log
 
+#### 0.3.0
+
+**2025-02-18**
+
+- **Breaking changes:**
+  - Updated TerriaJS to `8.8.0`
+    - Upgrades Webpack to version 5
+    - Upgraded sass to version 1.80+
+    - [Full list of TerriaJS changes](https://github.com/TerriaJS/terriajs/blob/main/CHANGES.md#880---2025-02-18)
+  - Converted files from CJS to ESM style
+    - This includes `entry.js`, `index.js` - if you have changed these files it is likely that you will get a merge conflict when upgrading. Please [reach out to us](https://github.com/terriajs/terriajs/discussions) if you need help.
+    - Replaced webpack aliases `~terriajs-variables` and `~terriajs` in css imports with relative paths. This simplifies the webpack configuration.
+
 #### 0.2.4
 
 **2024-12-19**
