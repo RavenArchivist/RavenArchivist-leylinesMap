@@ -59,10 +59,10 @@ export default terria
     beforeRestoreAppState: () => {
       // Load plugins before restoring app state because app state may
       // reference plugin components and catalog items.
-      return loadPlugins(viewState, plugins).catch((error) => {
-        console.error(`Error loading plugins`);
-        console.error(error);
-      });
+      //return loadPlugins(viewState, plugins).catch((error) => {
+      //  console.error(`Error loading plugins`);
+      //  console.error(error);
+      //});
     }
   })
   .catch(function (e) {
