@@ -1,5 +1,18 @@
 # Change Log
 
+#### 0.4.0
+
+**2025-04-04**
+
+- **Breaking changes:**
+  - Update TerriaJS to `8.9.2`
+    - New features
+      - This release has a new look UI with changes to workbench and other panels
+      - Tiling support for ArcGIS feature service. This is enabled by default if the server supports tiling and unsupported marker/point styles aren't used - [PR 7370](https://github.com/TerriaJS/terriajs/pull/7370)
+    - Bug fixes
+      - Fixes a regression bug in GeoJSON rendering that caused some features to be not rendered - [PR 7144](https://github.com/TerriaJS/terriajs/pull/7144)
+    - [Full list of TerriaJS changes](https://github.com/TerriaJS/terriajs/blob/main/CHANGES.md#892---2025-03-31)
+
 #### 0.3.0
 
 **2025-02-18**
