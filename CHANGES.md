@@ -1,5 +1,13 @@
 # Change Log
 
+#### 0.4.1
+
+**2025-04-24**
+
+- Update TerriaJS to `8.9.3`
+  - Contains a fix for region mapping and GeoJSON rendering.
+  - Read full [list of changes](https://github.com/TerriaJS/terriajs/blob/main/CHANGES.md#893---2025-04-24)
+
 #### 0.4.0
 
 **2025-04-04**
