@@ -7,8 +7,8 @@
   //$font-pop: $font-base; // If you just want to use one font throughout, do this.
   // These variables are for buttons and text.
   // "color-secondary" should be a lighter color than "color-primary" but still readable contrasted with white.
-  $color-primary: hsl(0, 0%, 64%),
-  $color-secondary: hsl(0, 0%, 53%),
+  $color-primary: hsl(0, 0%, 53%),
+  $color-secondary: hsl(0, 0%, 64%),
   // These variables set background panel colors
   $dark: hsl(0, 0%, 5%),
   $dark-lighter: hsl(0, 0%, 10%)
