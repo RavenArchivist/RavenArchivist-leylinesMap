@@ -14,7 +14,7 @@ function createLoader() {
   loaderGif.src = globeGif;
   loaderDiv.appendChild(loaderGif);
 
-  loaderDiv.style.backgroundColor = "#383F4D";
+  loaderDiv.style.backgroundColor = "#000000";
   document.body.appendChild(loaderDiv);
 
   loadMainScript()
