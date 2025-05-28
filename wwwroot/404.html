@@ -60,41 +60,46 @@
 
     <!-- Begin page content -->
     <div class="container content">
-    <div class="row">
-    <div class="col-sm-9">
+      <div class="row">
+        <div class="col-sm-9">
 
-      <h1>That page doesn't seem to be here</h1>
-      <p>The page you're looking for doesn't seem to exist. If you think this is an error, please send an email to <a href="mailto:info@leylines.net">info@leylines.net</a>.</p>
-      <p><b>&larr; Return to <a href="/">Leylines Map</a></b>.
-      <div style="font-size: 300px; color: lightgray; text-align:center">404</div>
-    </div>
+          <h1>That page doesn't seem to be here</h1>
+          <p>The page you're looking for doesn't seem to exist. If you think this is an error, please send an email to <a href="mailto:info@leylines.ch">info@leylines.ch</a>.</p>
+          <p><b>&larr; Return to <a href="/">Leylines Map</a></b>.</p>
+          <div style="font-size: 300px; color: lightgray; text-align:center">404</div>
+        </div>
 
-    <aside class="col-sm-3 partners">
-      <img class="center-block" src="images/leylines-logo.svg" alt="Leylines brand image">
-      <img class="center-block" src="https://cesium.com/logo-kit/cesium/Cesium_dark_color.png" alt="Cesium brand image">
-      <img class="center-block" src="https://images.squarespace-cdn.com/content/v1/5b8376e5f8370ab5b2455d45/1537943600309-K20ME7SBTJCPYYBF3T23/terria-brand-onLight%402x.png" alt="Terriajs brand image">
-      <img class="center-block" src="help/img/data61-white.jpg" alt="Data61 brand image">
-    </aside>
+        <aside class="col-sm-3 partners">
+          <img class="center-block" src="images/leylines-logo.svg" alt="Leylines brand image">
+          <img class="center-block" src="https://cesium.com/logo-kit/cesium/Cesium_dark_color.png" alt="Cesium brand image">
+          <img class="center-block" src="https://images.squarespace-cdn.com/content/v1/5b8376e5f8370ab5b2455d45/1537943600309-K20ME7SBTJCPYYBF3T23/terria-brand-onLight%402x.png" alt="Terriajs brand image">
+          <img class="center-block" src="help/img/data61-white.jpg" alt="Data61 brand image">
+        </aside>
 
-  </div>
-  </div><!-- End container -->
+      </div>
+    </div><!-- End container -->
 
+    <!-- Footer -->
     <footer class="footer">
       <div class="container">
-        <p class="text-muted">&copy; Leylines 2023. All Rights Reserved.</p>
-        <p><strong><a href="about.html#terms">Terms and conditions</a></strong> – <strong><a href="help/privacy.html">Privacy</a></strong></p>
-
+        <!-- <div class="col-lg-12"> -->
+          <p>&copy; Leylines 2025. All Rights Reserved.</p>
+          <p>
+            <strong><a href="about.html#terms">Terms and conditions</a></strong> –
+            <strong><a href="privacy.html">Privacy</a></strong>
+          </p>
+        <!-- </div> -->
       </div>
     </footer>
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="help/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        if (location.hash) {
+          location.hash && $(location.hash + '.collapse').collapse('show');
+        }
+      });
+    </script>
+    <script src="/public/js/bootstrap.min.js"></script>
   </body>
 </html>

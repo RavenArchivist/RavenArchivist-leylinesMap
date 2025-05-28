@@ -30,6 +30,7 @@ body > .container {
 }
 
 .footer > .container {
+  margin-top: 20px;
   padding-right: 15px;
   padding-left: 15px;
 }
