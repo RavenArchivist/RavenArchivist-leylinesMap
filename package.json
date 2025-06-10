@@ -12,7 +12,7 @@
     ]
   },
   "name": "leylinesjs-map",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Geospatial catalog explorer based on TerriaJS.",
   "license": "Apache-2.0",
   "engines": {
@@ -23,7 +23,6 @@
     "url": "https://github.com/leylines/leylinesMap"
   },
   "dependencies": {
-    "@types/node": "^22.13.1",
     "leylinesjs-server": "https://github.com/leylines/leylinesjs-server"
   },
   "config": {
