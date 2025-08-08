@@ -2,11 +2,18 @@ const configureWebpackForTerriaJS = require("terriajs/buildprocess/configureWebp
 const configureWebpackForPlugins = require("./configureWebpackForPlugins");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
+const HtmlPlugin = require("html-webpack-plugin");
+var minimist = require("minimist");
 
 /**
  * Webpack config for building terriamap
  */
 module.exports = function (devMode) {
+  var args = minimist(process.argv.slice(2), {
+    string: ["baseHref"],
+    default: { baseHref: "/" }
+  });
+
   // Base configuration
   const config = {
     mode: devMode ? "development" : "production",
@@ -130,6 +137,13 @@ module.exports = function (devMode) {
       new MiniCssExtractPlugin({
         filename: "TerriaMap.css",
         ignoreOrder: true
+      }),
+      new HtmlPlugin({
+        filename: path.resolve(__dirname, "..", "wwwroot", "index.html"),
+        template: path.resolve(__dirname, "..", "wwwroot", "index.ejs"),
+        templateParameters: {
+          baseHref: args.baseHref
+        }
       })
     ],
     resolve: {

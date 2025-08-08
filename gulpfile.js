@@ -68,26 +68,9 @@ gulp.task("write-version", function (done) {
   done();
 });
 
-gulp.task("render-index", function renderIndex(done) {
-  var ejs = require("ejs");
-  var minimist = require("minimist");
-  // Arguments written in skewer-case can cause problems (unsure why), so stick to camelCase
-  var options = minimist(process.argv.slice(2), {
-    string: ["baseHref"],
-    default: { baseHref: "/" }
-  });
-
-  var index = fs.readFileSync("wwwroot/index.ejs", "utf8");
-  var indexResult = ejs.render(index, { baseHref: options.baseHref });
-
-  fs.writeFileSync(path.join("wwwroot", "index.html"), indexResult);
-  done();
-});
-
 gulp.task(
   "build-app",
   gulp.parallel(
-    "render-index",
     gulp.series(
       "check-terriajs-dependencies",
       "write-version",
@@ -107,7 +90,6 @@ gulp.task(
 gulp.task(
   "release-app",
   gulp.parallel(
-    "render-index",
     gulp.series(
       "check-terriajs-dependencies",
       "write-version",
@@ -131,16 +113,8 @@ gulp.task(
 );
 
 gulp.task(
-  "watch-render-index",
-  gulp.series("render-index", function watchRenderIndex() {
-    gulp.watch(["wwwroot/index.ejs"], gulp.series("render-index"));
-  })
-);
-
-gulp.task(
   "watch-app",
   gulp.parallel(
-    "watch-render-index",
     gulp.series("check-terriajs-dependencies", function watchApp(done) {
       var fs = require("fs");
       var watchWebpack = require("terriajs/buildprocess/watchWebpack");
@@ -287,10 +261,5 @@ gulp.task("terriajs-server", terriajsServerGulpTask(3001));
 gulp.task("build", gulp.series("copy-terriajs-assets", "build-app"));
 gulp.task("release", gulp.series("copy-terriajs-assets", "release-app"));
 gulp.task("watch", gulp.parallel("watch-terriajs-assets", "watch-app"));
-// Run render-index before starting terriajs-server because terriajs-server won't
-//  start if index.html isn't present
-gulp.task(
-  "dev",
-  gulp.parallel(gulp.series("render-index", "terriajs-server"), "watch")
-);
+gulp.task("dev", gulp.parallel("watch", "terriajs-server"));
 gulp.task("default", gulp.series("lint", "build"));
