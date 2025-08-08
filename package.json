@@ -3,7 +3,8 @@
   "workspaces": {
     "packages": [
       "packages/terriajs",
-      "packages/cesium",
+      "packages/terriajs-cesium/packages/engine",
+      "packages/terriajs-cesium/packages/widgets",
       "packages/terriajs-server",
       "packages/plugin-sample"
     ],
