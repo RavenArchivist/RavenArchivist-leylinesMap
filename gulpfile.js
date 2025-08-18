@@ -261,5 +261,24 @@ gulp.task("terriajs-server", terriajsServerGulpTask(3001));
 gulp.task("build", gulp.series("copy-terriajs-assets", "build-app"));
 gulp.task("release", gulp.series("copy-terriajs-assets", "release-app"));
 gulp.task("watch", gulp.parallel("watch-terriajs-assets", "watch-app"));
-gulp.task("dev", gulp.parallel("watch", "terriajs-server"));
+// Simple task that waits for index.html then starts server
+gulp.task(
+  "dev",
+  gulp.parallel("watch", function startServerWhenReady(done) {
+    const indexFile = path.join(__dirname, "wwwroot", "index.html");
+
+    if (fs.existsSync(indexFile)) {
+      terriajsServerGulpTask(3001)(done);
+      return;
+    }
+    var watcher = gulp.watch(
+      path.join(__dirname, "wwwroot", "index.html"),
+      watchOptions
+    );
+    watcher.on("add", function () {
+      watcher.close();
+      terriajsServerGulpTask(3001)(done);
+    });
+  })
+);
 gulp.task("default", gulp.series("lint", "build"));
