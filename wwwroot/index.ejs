@@ -95,14 +95,10 @@
     <script>
       L_PREFER_CANVAS = true;
     </script>
+    <script src="sprite-loader.js"></script>
   </head>
 
   <body>
-    <% if (typeof htmlWebpackPlugin !== 'undefined' &&
-    htmlWebpackPlugin.options.sprites) { %> <% for (var spriteName in
-    htmlWebpackPlugin.options.sprites) { %> <%=
-    htmlWebpackPlugin.options.sprites[spriteName] %> <% } %> <% } %>
-
     <div id="ui"></div>
   </body>
 </html>
