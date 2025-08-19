@@ -8,11 +8,11 @@
   // Function to load sprite manifest
   async function loadSpriteManifest() {
     try {
-      var response = await fetch("build/sprite-manifest.json");
+      const response = await fetch("build/sprite-manifest.json");
       if (!response.ok) {
         throw new Error("Failed to load sprite manifest: " + response.status);
       }
-      var manifest = await response.json();
+      const manifest = await response.json();
       return manifest.sprites || [];
     } catch (error) {
       throw new Error("Invalid sprite manifest: " + error.message);
@@ -21,29 +21,27 @@
 
   // Function to load and inject a single sprite
   async function loadSprite(spriteUrl) {
-    var response = await fetch(spriteUrl);
+    const response = await fetch(spriteUrl);
     if (!response.ok) {
       throw new Error(
         "Failed to load sprite: " + spriteUrl + " (" + response.status + ")"
       );
     }
 
-    var svgContent = await response.text();
+    const svgContent = await response.text();
 
-    // Create a div to hold the sprite
-    var spriteContainer = document.createElement("div");
-    spriteContainer.style.display = "none";
+    const existingContainer = document.getElementById("svg-sprites");
+    const spriteContainer = document.createElement("div");
     spriteContainer.innerHTML = svgContent;
 
-    // Insert at the beginning of body
-    document.body.insertBefore(spriteContainer, document.body.firstChild);
+    existingContainer.appendChild(spriteContainer.firstChild);
 
     console.log("SVG sprite loaded:", spriteUrl);
   }
 
   // Function to load all sprites
   async function loadAllSprites(spritePaths) {
-    var promises = spritePaths.map(function (spritePath) {
+    const promises = spritePaths.map(function (spritePath) {
       return loadSprite("build/" + spritePath);
     });
 
@@ -58,13 +56,9 @@
       return;
     }
 
-    console.log("Initializing sprite loader...");
-
     try {
-      var spritePaths = await loadSpriteManifest();
-      console.log("Found", spritePaths.length, "sprite(s) to load");
+      const spritePaths = await loadSpriteManifest();
       await loadAllSprites(spritePaths);
-      console.log("All sprites loaded successfully");
     } catch (error) {
       console.warn("Sprite loader failed:", error.message);
     }
