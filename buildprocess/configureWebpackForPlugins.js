@@ -51,10 +51,8 @@ function createPluginIconsRule() {
     options: {
       namespace: (svgPath) => {
         // Generate a symbolId by concatenating the package name and the icon name
-        const packageName = packageNames[svgPath] || "terriajs-plugin-";
-        const iconName = path.basename(svgPath, ".svg");
-        const symbolId = `${packageName}-${iconName}`;
-        return symbolId;
+        const packageName = packageNames[svgPath] || "terriajs-plugin";
+        return packageName;
       }
     }
   };
