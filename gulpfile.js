@@ -19,6 +19,17 @@ var watchOptions = {
   interval: 1000
 };
 
+const getBaseHref = () => {
+  var minimist = require("minimist");
+  // Arguments written in skewer-case can cause problems (unsure why), so stick to camelCase
+  var options = minimist(process.argv.slice(2), {
+    string: ["baseHref"],
+    default: { baseHref: "/" }
+  });
+
+  return options.baseHref;
+};
+
 gulp.task("check-terriajs-dependencies", function (done) {
   var appPackageJson = require("./package.json");
   var terriaPackageJson = require("terriajs/package.json");
@@ -79,7 +90,10 @@ gulp.task(
       function buildApp(done) {
         var runWebpack = require("terriajs/buildprocess/runWebpack.js");
         var webpack = require("webpack");
-        var webpackConfig = require("./buildprocess/webpack.config.js")(true);
+        var webpackConfig = require("./buildprocess/webpack.config.js")({
+          devMode: true,
+          baseHref: getBaseHref()
+        });
 
         checkForDuplicateCesium();
 
@@ -98,7 +112,10 @@ gulp.task(
       function releaseApp(done) {
         var runWebpack = require("terriajs/buildprocess/runWebpack.js");
         var webpack = require("webpack");
-        var webpackConfig = require("./buildprocess/webpack.config.js")(false);
+        var webpackConfig = require("./buildprocess/webpack.config.js")({
+          devMode: false,
+          baseHref: getBaseHref()
+        });
 
         checkForDuplicateCesium();
 
@@ -121,10 +138,10 @@ gulp.task(
       var fs = require("fs");
       var watchWebpack = require("terriajs/buildprocess/watchWebpack");
       var webpack = require("webpack");
-      var webpackConfig = require("./buildprocess/webpack.config.js")(
-        true,
-        false
-      );
+      var webpackConfig = require("./buildprocess/webpack.config.js")({
+        devMode: true,
+        baseHref: getBaseHref()
+      });
 
       checkForDuplicateCesium();
 
