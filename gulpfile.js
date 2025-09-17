@@ -72,10 +72,7 @@ gulp.task("write-version", function (done) {
 
 gulp.task("link-config", function (done) {
   const { src, symlink } = require("gulp");
-  src("../leylines-config/devserverconfig.json").pipe(
-    symlink(".", { dirMode: false, overwrite: true })
-  );
-  src("../leylines-config/productionserverconfig.json").pipe(
+  src("../leylines-config/serverconfig.json").pipe(
     symlink(".", { dirMode: false, overwrite: true })
   );
   src("../leylines-config/leylines.json").pipe(
