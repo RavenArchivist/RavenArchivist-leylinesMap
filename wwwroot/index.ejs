@@ -43,6 +43,7 @@
     <meta property="og:site_name" content="Leylines - 3D-Globe">
     <meta property="fb:admins" content="100014604464376">
 
+    <meta name="theme-color" content="#282D32" />
     <title>Leylines Map - All about ley lines | maps.leylines.net</title>
 
     <script type='application/ld+json'>
@@ -98,12 +99,13 @@
     </script>
 
     <!-- Leaflet -->
-    <script>L_PREFER_CANVAS = true;</script>
-</head>
+    <script>
+      L_PREFER_CANVAS = true;
+    </script>
+  </head>
 
-<body>
-
-<div id='ui'></div>
-  <script src="build/LeylinesMap.js"></script>
-</body>
+  <body>
+    <div id="svg-sprites" style="display: none"></div>
+    <div id="ui"></div>
+  </body>
 </html>
