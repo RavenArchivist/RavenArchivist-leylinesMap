@@ -1,35 +1,25 @@
+### 📄 `.gitignore`
+```plaintext
+# Node.js
 node_modules/
-.idea/
-wwwroot/build/
-wwwroot/init/
-wwwroot/doc/
-wwwroot/index.html
-wwwroot/config.json
-npm-debug.log
-version.js
-version.json
-wwwroot/init/nm.json
-datasources/00_National_Data_Sets.json
+npm-debug.log*
+
+# macOS
 .DS_Store
-.localized
-.sass-cache
-/terriajs.pid
-/terriajs-server.log
-devserverconfig.json
-productionserverconfig.json
-/wwwroot/editor/
-/error.log
-/error.log
-/output.log
-privateserverconfig.json
-wwwroot/privateconfig.json
-wwwroot/leylines-geodata
-wwwroot/catalogs
-deploy/packages/
-deploy/work/
-packages/
-pancake/
-yarn-error.log
-package-lock.json
-.nvmrc
-.tool-versions
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VS Code
+.vscode/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Map tiles or cache
+tiles/
+cache/
+
